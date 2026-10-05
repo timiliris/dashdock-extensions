@@ -139,6 +139,7 @@ Les méthodes `config.get` et `config.save` sont disponibles pour chaque instanc
 | `weather` | `weather.search`, `weather.current` | `{query: 'Bruxelles', lang: 'fr'}` ; `{latitude: 50.85, longitude: 4.35}` |
 | `news` | `news.feeds`, `news.items` | `{}` ; `{feed: 'id-administrateur'}` |
 | `ai` | `ai.providers`, `ai.models`, `ai.chat` | `{}` ; `{provider: 'ollama'}` ; `{provider, model, messages: [{role: 'user', content: 'Bonjour'}]}` |
+| `dashboard` | `dashboard.widgets`, `dashboard.action` | `{}` ; `{widget_id, action, arguments}` |
 | `links` | Aucune méthode RPC ; autorise les onglets externes | Liens HTTP(S) avec `target="_blank"` et `rel="noopener noreferrer"` |
 
 La permission `links` est indépendante des permissions de données. L’extension Actualités déclare `"permissions": ["news", "links"]` : `news` autorise la lecture des flux par le pont, `links` autorise l’ouverture des articles dans un nouvel onglet. Valider les URL HTTP(S) avant de créer un lien, puis utiliser `target="_blank" rel="noopener noreferrer"`. Les documents ouverts sortent du sandbox de l’extension ; cette permission ne donne aucun accès au DOM du dashboard, à son stockage ou à ses secrets, et n’active pas les appels `fetch` directs.
@@ -164,3 +165,21 @@ Les listes Checklist sauvegardent leurs tâches et Focus sauvegarde ses durées 
 Une extension peut annoncer `{type: 'dashdock:ready', settings: true}` pour afficher une roue dentée sur sa carte. DashDock ouvre son point d’entrée dans un panneau latéral avec `?view=settings`. La carte reçoit `?view=widget` ; l’aperçu reçoit `?view=preview`. L’extension adapte son interface à ce paramètre (contenu dans la carte, configuration dans le panneau).
 
 Le panneau utilise le même identifiant de widget, les mêmes permissions et le même thème. `config.save` persiste les réglages et transmet `dashdock:config` aux deux instances. Écoutez cet événement pour mettre à jour la carte sans recharger son iframe ni perdre son état de session. Les réglages doivent être des données ; les clés secrètes restent côté serveur. Le panneau se ferme avec Échap, sa croix ou un clic sur le fond.
+
+### Actions sur le dashboard / Dashboard actions
+
+La permission `dashboard` permet à un widget installé d’énumérer et de modifier les widgets de son dashboard avec `dashboard.widgets` et `dashboard.action`. Elle est refusée dans les aperçus et les panneaux de réglages. L’inventaire contient seulement les identifiants, titres, types et actions disponibles : aucun contenu de note ni aucune configuration des autres extensions n’est transmis au modèle.
+
+L’assistant déclare `ai` et `dashboard`. Le pont joint automatiquement l’inventaire validé à `ai.chat`. Un modèle compatible avec les outils peut appeler `dashboard_action`; le backend valide ces appels et retourne `actions` en plus de `content`. L’assistant exécute les actions structurées via le pont et affiche chaque résultat ou erreur. Un texte libre du modèle ne déclenche jamais de commande.
+
+| Action | Arguments | Cible |
+| --- | --- | --- |
+| `note.create` | `{title, content}` | `widget_id: ''`, nouvelle note |
+| `note.append` | `{text}` | Identifiant d’une note existante |
+| `stopwatch.start` | `{}` | Identifiant d’un chronomètre prêt |
+| `stopwatch.pause` | `{}` | Identifiant d’un chronomètre prêt |
+| `stopwatch.reset` | `{}` | Identifiant d’un chronomètre prêt |
+
+Le chronomètre annonce `parent.postMessage({type:'dashdock:ready', actions:['start','pause','reset']}, '*')`. Il accepte ensuite les messages du parent `{type:'dashdock:action', requestId, action:'start', arguments:{}}` et répond `{type:'dashdock:action-result', requestId, result:{running:true, elapsed_ms:0}}` ou `{type:'dashdock:action-result', requestId, error:'unsupported_action'}`. Toujours vérifier `event.source === parent` et l’action reçue. Les commandes démarrer et pause sont idempotentes. Le chronomètre conserve son temps entre une pause et une reprise, et se réinitialise au rechargement.
+
+Only installed widget views with the `dashboard` permission may list or execute dashboard actions. The bridge scopes the request to the sender’s board, checks the target and permitted action, and rejects previews, settings views, arbitrary commands and foreign messages. Tool-capable models are required; ordinary model text never executes. This protocol currently supports native notes and the store’s stopwatch; announcing arbitrary action names does not grant new capabilities.

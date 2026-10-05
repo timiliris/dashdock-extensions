@@ -5,8 +5,8 @@
       "manifest": {
         "id": "assistant",
         "name": "Assistant IA",
-        "version": "1.0.0",
-        "description": "Discutez avec OpenRouter, Ollama ou LM Studio. Modèles locaux ou cloud, clés conservées sur le serveur.",
+        "version": "1.1.0",
+        "description": "Discutez avec OpenRouter, Ollama ou LM Studio et contrôlez les notes et chronomètres de votre dashboard.",
         "entry": "index.html",
         "api_version": 1,
         "category": "ai",
@@ -19,24 +19,25 @@
           "LM Studio"
         ],
         "permissions": [
-          "ai"
+          "ai",
+          "dashboard"
         ],
         "translations": {
           "en": {
             "name": "AI Assistant",
-            "description": "Chat with OpenRouter, Ollama or LM Studio. Local or cloud models, keys kept on the server."
+            "description": "Chat with OpenRouter, Ollama or LM Studio and control notes and stopwatches on your dashboard."
           },
           "fr": {
             "name": "Assistant IA",
-            "description": "Discutez avec OpenRouter, Ollama ou LM Studio. Modèles locaux ou cloud, clés conservées sur le serveur."
+            "description": "Discutez avec OpenRouter, Ollama ou LM Studio et contrôlez les notes et chronomètres de votre dashboard."
           }
         }
       },
       "files": [
         {
           "path": "app.js",
-          "size": 10342,
-          "sha256": "3520bc913a4c01f4dfcb82d5febae5f0e0bfbb516c5a25065cd4f31b8d221a94"
+          "size": 12903,
+          "sha256": "474ff5112acafb46f12bc6a947c8d02e3f9015eae5b86eab13dcce38029f7650"
         },
         {
           "path": "index.html",
@@ -45,13 +46,13 @@
         },
         {
           "path": "manifest.json",
-          "size": 770,
-          "sha256": "3e8d844bd93b2521a3191153b8577c87ee4ddbefff9797df47926f1dda36160b"
+          "size": 791,
+          "sha256": "b840ad2d229ff266787b483a58874f6d5da743dd3d056e743adf526fc58c3f52"
         },
         {
           "path": "style.css",
-          "size": 5137,
-          "sha256": "daf03b47b813c8757c55067821bd3bdb17f157c3f2d0cc0f4c00a52f518833ac"
+          "size": 5434,
+          "sha256": "0fa297a8ed38b3bb1373a71f1f4b73d4f51ce9c5b69e0b935d1efea6d05bdd1e"
         },
         {
           "path": "theme.js",
@@ -477,7 +478,7 @@
       "manifest": {
         "id": "stopwatch",
         "name": "Chronomètre",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "description": "Un chronomètre simple avec pause, reprise et remise à zéro.",
         "entry": "index.html",
         "api_version": 1,
@@ -509,8 +510,8 @@
         },
         {
           "path": "app.js",
-          "size": 2112,
-          "sha256": "e30d0a070f6277042edf4ada226612bdaf265a2148f1facb73e51f7ba9efa526"
+          "size": 3101,
+          "sha256": "f8088cb4839c7c0f5b2a10f7d0e25e11a31605eaad54b88416f464106dee1cac"
         },
         {
           "path": "index.html",
@@ -519,8 +520,8 @@
         },
         {
           "path": "manifest.json",
-          "size": 560,
-          "sha256": "d76eafea6d5a99503521beb173b13040ea61f857c6ebc344f92692e0ec2e1c2b"
+          "size": 616,
+          "sha256": "877079ef1e5b4651b9aa3c9d71a08e792065cbdae273f61c674c2c7cd5db3442"
         },
         {
           "path": "style.css",

@@ -29,6 +29,7 @@ Pour publier une nouvelle version : modifier le numéro du manifeste, régénér
 ```sh
 node tools/build-catalogue.mjs --check
 node tests/assistant.cjs
+node tests/stopwatch.cjs
 node tests/extensions.cjs
 node tests/scaffold.mjs
 ```

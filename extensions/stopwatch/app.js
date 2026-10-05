@@ -7,6 +7,14 @@
   let saved = 0, started = null, frame = null;
   const elapsed = document.querySelector('#elapsed'), toggle = document.querySelector('#toggle'), reset = document.querySelector('#reset');
   const current = () => saved + (started === null ? 0 : performance.now() - started);
+  function command(action) {
+    if (action === 'start') { if (started === null) started = performance.now(); }
+    else if (action === 'pause') { if (started !== null) { saved = current(); started = null; } }
+    else if (action === 'reset') { saved = 0; started = null; }
+    else throw new Error('unsupported_action');
+    cancelAnimationFrame(frame); labels(); render();
+    return {running:started !== null, elapsed_ms:Math.floor(current())};
+  }
   function labels() {
     const t = translations[lang];
     document.documentElement.lang = lang;
@@ -22,15 +30,25 @@
     if (started !== null) frame = requestAnimationFrame(render);
   }
   toggle.addEventListener('click', () => {
-    if (started === null) started = performance.now();
-    else { saved = current(); started = null; }
-    cancelAnimationFrame(frame); labels(); render();
+    command(started === null ? 'start' : 'pause');
   });
   reset.addEventListener('click', () => {
-    cancelAnimationFrame(frame); saved = 0; started = null; labels(); render();
+    command('reset');
+  });
+  window.addEventListener('message', event => {
+    if (event.source !== parent || event.data?.type !== 'dashdock:action') return;
+    const {requestId,action,arguments:args} = event.data;
+    if (typeof requestId !== 'string' || requestId.length > 100) return;
+    let response;
+    try {
+      if (args && (typeof args !== 'object' || Array.isArray(args) || Object.keys(args).length)) throw new Error('invalid_arguments');
+      response = {result:command(action)};
+    } catch (error) { response = {error:error.message}; }
+    parent.postMessage({type:'dashdock:action-result',requestId,...response},'*');
   });
   document.addEventListener('dashdock:language', event => {
     if (Object.hasOwn(translations,event.detail?.lang)) { lang = event.detail.lang; labels(); }
   });
   labels(); render();
+  parent.postMessage({type:'dashdock:ready',actions:['start','pause','reset']},'*');
 })();

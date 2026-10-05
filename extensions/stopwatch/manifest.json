@@ -1,16 +1,27 @@
 {
   "id": "stopwatch",
   "name": "Chronomètre",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Un chronomètre simple avec pause, reprise et remise à zéro.",
   "entry": "index.html",
   "api_version": 1,
   "category": "tools",
   "icon": "◷",
   "permissions": [],
-  "tags": ["timer", "time", "chronomètre", "stopwatch"],
+  "tags": [
+    "timer",
+    "time",
+    "chronomètre",
+    "stopwatch"
+  ],
   "translations": {
-    "fr": {"name": "Chronomètre", "description": "Un chronomètre simple avec pause, reprise et remise à zéro."},
-    "en": {"name": "Stopwatch", "description": "A simple stopwatch with pause, resume and reset."}
+    "fr": {
+      "name": "Chronomètre",
+      "description": "Un chronomètre simple avec pause, reprise et remise à zéro."
+    },
+    "en": {
+      "name": "Stopwatch",
+      "description": "A simple stopwatch with pause, resume and reset."
+    }
   }
 }
