@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Favoris</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main class="widget">
+  <div class="filters"><input id="search" type="search" maxlength="100"><select id="category"></select></div>
+  <ul id="links"></ul><p id="empty" class="muted"></p>
+  <div class="pagination"><span id="count" class="muted"></span><button id="previous" type="button">‹</button><button id="next" type="button">›</button></div>
+</main>
+<section class="settings">
+  <p id="intro" class="muted"></p>
+  <form id="form">
+    <label id="name-label" for="name"></label><input id="name" maxlength="80" required autocomplete="off">
+    <label id="url-label" for="url"></label><input id="url" type="url" maxlength="2000" placeholder="https://…" required autocomplete="url">
+    <label id="group-label" for="group"></label><input id="group" maxlength="40" autocomplete="off">
+    <div class="actions"><button id="save" type="submit"></button><button id="cancel" type="button" hidden></button></div>
+  </form>
+  <h2 id="saved-heading"></h2><ul id="saved"></ul>
+</section>
+<p id="error" role="alert"></p>
+<button id="retry" type="button" hidden></button>
+<script src="bridge.js"></script><script src="app.js"></script>
+</body></html>

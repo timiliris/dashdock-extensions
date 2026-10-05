@@ -1,0 +1,16 @@
+{
+  "id": "scratchpad",
+  "name": "Bloc-notes",
+  "version": "1.0.0",
+  "description": "Vos idées à portée de main, avec sauvegarde automatique et copie du texte.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "tools",
+  "icon": "✎",
+  "permissions": [],
+  "tags": ["notes", "text", "scratchpad", "writing", "bloc-notes"],
+  "translations": {
+    "fr": {"name": "Bloc-notes", "description": "Vos idées à portée de main, avec sauvegarde automatique et copie du texte."},
+    "en": {"name": "Scratchpad", "description": "Keep ideas close, with automatic saving and easy text copying."}
+  }
+}

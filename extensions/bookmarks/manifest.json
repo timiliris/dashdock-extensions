@@ -1,0 +1,16 @@
+{
+  "id": "bookmarks",
+  "name": "Favoris",
+  "version": "1.0.0",
+  "description": "Vos services et liens favoris, organisés par catégorie avec recherche rapide.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "tools",
+  "icon": "↗",
+  "permissions": ["links"],
+  "tags": ["bookmarks", "links", "services", "favorites", "raccourcis"],
+  "translations": {
+    "fr": {"name": "Favoris", "description": "Vos services et liens favoris, organisés par catégorie avec recherche rapide."},
+    "en": {"name": "Bookmarks", "description": "Your favorite services and links, organized into categories with quick search."}
+  }
+}

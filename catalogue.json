@@ -64,6 +64,70 @@
     },
     {
       "manifest": {
+        "id": "bookmarks",
+        "name": "Favoris",
+        "version": "1.0.0",
+        "description": "Vos services et liens favoris, organisés par catégorie avec recherche rapide.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "tools",
+        "icon": "↗",
+        "permissions": [
+          "links"
+        ],
+        "tags": [
+          "bookmarks",
+          "links",
+          "services",
+          "favorites",
+          "raccourcis"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Favoris",
+            "description": "Vos services et liens favoris, organisés par catégorie avec recherche rapide."
+          },
+          "en": {
+            "name": "Bookmarks",
+            "description": "Your favorite services and links, organized into categories with quick search."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 601,
+          "sha256": "00f4331157be0262c95cdcbad9a723b095f81f173963124260f82c9902460199"
+        },
+        {
+          "path": "app.js",
+          "size": 8016,
+          "sha256": "c7b1e362c8397689b8d285fe5c02ad198927ae3e02871c778ddf7ef0ed420e80"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3089,
+          "sha256": "b94c3996c0ea8065355f31bdd9178a785ba6bc6814a50c8330fb8db6401d87ec"
+        },
+        {
+          "path": "index.html",
+          "size": 1350,
+          "sha256": "6e6a90105306739d784a9717448178292100db0af526fcfde2490974c6e7ba19"
+        },
+        {
+          "path": "manifest.json",
+          "size": 636,
+          "sha256": "3424bb5f57ede355ccec0d79164d0ace96a4784b7b96fcb40a5085b858f6a1ae"
+        },
+        {
+          "path": "style.css",
+          "size": 2441,
+          "sha256": "e2103fd1b10c32604e8b00b5b07f56d732e757e1dd6b7f486243461df36d021f"
+        }
+      ]
+    },
+    {
+      "manifest": {
         "id": "calculator",
         "name": "Calculatrice",
         "version": "1.0.0",
@@ -183,6 +247,68 @@
           "path": "theme.js",
           "size": 1561,
           "sha256": "c84fa847d5d039b65a83fb31729e2c934faddae2742f4d1e45acacd407ccb4d2"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "countdown",
+        "name": "Compte à rebours",
+        "version": "1.0.0",
+        "description": "Gardez un œil sur votre prochain événement avec un compte à rebours sauvegardé.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "tools",
+        "icon": "◴",
+        "permissions": [],
+        "tags": [
+          "countdown",
+          "event",
+          "time",
+          "date",
+          "événement"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Compte à rebours",
+            "description": "Gardez un œil sur votre prochain événement avec un compte à rebours sauvegardé."
+          },
+          "en": {
+            "name": "Countdown",
+            "description": "Keep track of your next event with a saved countdown."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 638,
+          "sha256": "c9b81acf4c073ea31e3f1e75dd90f27678b9857726f578c58ba5d4e0cf50bb76"
+        },
+        {
+          "path": "app.js",
+          "size": 4910,
+          "sha256": "be5939788f6fabd892fedcae6b7bea645fca6ff6cc2d9f1cadd96650fd80d0dd"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3089,
+          "sha256": "b94c3996c0ea8065355f31bdd9178a785ba6bc6814a50c8330fb8db6401d87ec"
+        },
+        {
+          "path": "index.html",
+          "size": 1252,
+          "sha256": "b1a0b86ca5852c082b16f3764164ce6d4917e633144f95087c1f449058ae1727"
+        },
+        {
+          "path": "manifest.json",
+          "size": 626,
+          "sha256": "acda56ff428d463986fec16c776fa563c74260e6d89532d1622eeecb9ba05f3f"
+        },
+        {
+          "path": "style.css",
+          "size": 1882,
+          "sha256": "ca8479b43e87fb4b37ca109ab76b91cfa3e857ea1b940113db4e29e24192e617"
         }
       ]
     },
@@ -408,6 +534,68 @@
           "path": "style.css",
           "size": 2591,
           "sha256": "57090628185d835d7dbf498fb57c5622d2e31181f489cf8037591ac8d1258742"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "scratchpad",
+        "name": "Bloc-notes",
+        "version": "1.0.0",
+        "description": "Vos idées à portée de main, avec sauvegarde automatique et copie du texte.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "tools",
+        "icon": "✎",
+        "permissions": [],
+        "tags": [
+          "notes",
+          "text",
+          "scratchpad",
+          "writing",
+          "bloc-notes"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Bloc-notes",
+            "description": "Vos idées à portée de main, avec sauvegarde automatique et copie du texte."
+          },
+          "en": {
+            "name": "Scratchpad",
+            "description": "Keep ideas close, with automatic saving and easy text copying."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 1239,
+          "sha256": "e05b334e2c334415cb88c0e56217bf2dcc3ece68633827384f9fe30d8c315d03"
+        },
+        {
+          "path": "app.js",
+          "size": 6196,
+          "sha256": "66c8705cc4a391ebfca48ba4a6b0176bd161935e5b4148da74a8aa0dd761a5f5"
+        },
+        {
+          "path": "bridge.js",
+          "size": 2781,
+          "sha256": "5fb2a2f6e6f4bbd173c6d234fe8499e72ecd2c21b50feaaeeb861dc3feee918c"
+        },
+        {
+          "path": "index.html",
+          "size": 1364,
+          "sha256": "fe6c6c7a51d286af3531d93e40db39ff6d1a88b75f334e5969be291859d2e09b"
+        },
+        {
+          "path": "manifest.json",
+          "size": 612,
+          "sha256": "a11c80560d888a14cf39807c26895dc788b864a5ca26c919e857788dbd636dc4"
+        },
+        {
+          "path": "style.css",
+          "size": 2564,
+          "sha256": "217c4aae089a4a8212cd812b4e1d5e2aad2d17c0c4cdc6be39c2638d85d6dfab"
         }
       ]
     },

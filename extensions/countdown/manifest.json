@@ -1,0 +1,16 @@
+{
+  "id": "countdown",
+  "name": "Compte à rebours",
+  "version": "1.0.0",
+  "description": "Gardez un œil sur votre prochain événement avec un compte à rebours sauvegardé.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "tools",
+  "icon": "◴",
+  "permissions": [],
+  "tags": ["countdown", "event", "time", "date", "événement"],
+  "translations": {
+    "fr": {"name": "Compte à rebours", "description": "Gardez un œil sur votre prochain événement avec un compte à rebours sauvegardé."},
+    "en": {"name": "Countdown", "description": "Keep track of your next event with a saved countdown."}
+  }
+}

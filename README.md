@@ -31,6 +31,8 @@ node tools/build-catalogue.mjs --check
 node tests/assistant.cjs
 node tests/stopwatch.cjs
 node tests/server-status.cjs
+node tests/practical.cjs
+node tests/scratchpad.cjs
 node tests/extensions.cjs
 node tests/scaffold.mjs
 ```

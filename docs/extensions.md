@@ -45,7 +45,10 @@ L’API v1 fournit une passerelle contrôlée vers les intégrations backend et 
 | `checklist` | Ajouter, cocher, supprimer et effacer les tâches terminées | Tâches sauvegardées par widget ; 16 tâches de 100 caractères maximum ; aperçu temporaire |
 | `date` | Calendrier mensuel, navigation et retour à aujourd’hui | Date locale du navigateur ; aucun événement ni compte connecté |
 | `hello` | Exemple interactif à modifier | Aucun stockage |
-| `server-status` | Disponibilité HTTP et latence d’un service | Cibles définies par l’administrateur ; configuration persistante par widget |
+| `server-status` | Disponibilité HTTP, latence et graphique historique | Services ajoutables dans les réglages ; suivi serveur activable, un relevé par minute conservé 24 h |
+| `bookmarks` | Favoris et raccourcis organisés, avec recherche | Liens HTTP(S) ; réglages persistants par widget ; permission `links` |
+| `countdown` | Compte à rebours vers un événement | Échéance sauvegardée par widget ; heure du navigateur ; aucune notification système |
+| `scratchpad` | Bloc-notes éditable avec sauvegarde différée | Texte sauvegardé par widget ; taille limitée pour respecter la configuration du serveur |
 | `weather` | Recherche de ville et météo réelle Open-Meteo | Réseau requis ; pas de clé ; ville persistante par widget |
 | `news` | Titres et liens RSS/Atom | Flux définis par l’administrateur ; flux choisi persistant ; permission `links` pour ouvrir les articles |
 | `assistant` | Chat OpenRouter, Ollama ou LM Studio | Fournisseur et modèle persistants ; conversation limitée à la session |
@@ -135,7 +138,7 @@ Les méthodes `config.get` et `config.save` sont disponibles pour chaque instanc
 
 | Permission | Méthodes | Paramètres |
 | --- | --- | --- |
-| `status` | `status.targets`, `status.check` | `{}` ; `{target: 'id-administrateur'}` |
+| `status` | `status.targets`, `status.check`, `status.history`, `status.tracking` | `{}` ; `{target}` ; `{target, hours: 1\|6\|24}` ; `{target, enabled: true\|false}` |
 | `weather` | `weather.search`, `weather.current` | `{query: 'Bruxelles', lang: 'fr'}` ; `{latitude: 50.85, longitude: 4.35}` |
 | `news` | `news.feeds`, `news.items` | `{}` ; `{feed: 'id-administrateur'}` |
 | `ai` | `ai.providers`, `ai.models`, `ai.chat` | `{}` ; `{provider: 'ollama'}` ; `{provider, model, messages: [{role: 'user', content: 'Bonjour'}]}` |

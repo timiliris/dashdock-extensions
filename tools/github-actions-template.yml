@@ -14,5 +14,7 @@ jobs:
       - run: node tests/assistant.cjs
       - run: node tests/stopwatch.cjs
       - run: node tests/server-status.cjs
+      - run: node tests/practical.cjs
+      - run: node tests/scratchpad.cjs
       - run: node tests/extensions.cjs
       - run: node tests/scaffold.mjs

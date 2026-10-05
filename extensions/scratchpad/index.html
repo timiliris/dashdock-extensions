@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bloc-notes · Scratchpad</title>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.dataset.view=new URLSearchParams(location.search).get('view')||'preview';</script>
+</head>
+<body>
+  <main class="notepad">
+    <div class="heading"><span class="eyebrow" id="heading"></span><button id="copy" type="button"></button></div>
+    <label class="sr-only" id="text-label" for="text"></label>
+    <textarea id="text" spellcheck="true" disabled></textarea>
+    <div class="footer"><span id="counter"></span><span id="save-state" role="status" aria-live="polite"></span></div>
+  </main>
+  <section class="settings">
+    <h1 id="settings-heading"></h1>
+    <label id="title-label" for="title"></label>
+    <input id="title" maxlength="80" autocomplete="off" disabled>
+    <label class="toggle"><input id="mono" type="checkbox" disabled><span id="mono-label"></span></label>
+    <p id="settings-note" class="hint"></p>
+  </section>
+  <p id="notice" class="hint" role="status" aria-live="polite"></p>
+  <div id="failure" role="alert" hidden><span id="failure-text"></span><button id="retry" type="button"></button></div>
+  <script src="bridge.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

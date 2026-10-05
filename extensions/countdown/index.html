@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Compte à rebours</title><link rel="stylesheet" href="style.css"></head><body>
+<main class="widget">
+  <span id="state" class="pill"></span><h2 id="title"></h2><p id="date" class="muted"></p>
+  <div id="timer" role="timer" aria-live="off"><div><strong id="days">—</strong><span id="days-label"></span></div><div><strong id="hours">—</strong><span id="hours-label"></span></div><div><strong id="minutes">—</strong><span id="minutes-label"></span></div><div><strong id="seconds">—</strong><span id="seconds-label"></span></div></div>
+  <p id="hint" class="muted"></p>
+</main>
+<section class="settings"><p id="intro" class="muted"></p><form id="form">
+  <label id="name-label" for="name"></label><input id="name" maxlength="100" required autocomplete="off">
+  <label id="target-label" for="target"></label><input id="target" type="datetime-local" required>
+  <p id="timezone" class="muted"></p><button id="save" type="submit"></button>
+</form></section>
+<p id="error" role="alert"></p><button id="retry" type="button" hidden></button><script src="bridge.js"></script><script src="app.js"></script>
+</body></html>
