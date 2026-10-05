@@ -1,8 +1,8 @@
 {
   "id": "server-status",
   "name": "Statut des serveurs",
-  "version": "1.2.0",
-  "description": "DisponibilitÃ© HTTP et latence rÃ©elle de vos services configurÃ©s.",
+  "version": "1.2.1",
+  "description": "Suivi HTTP de vos services : disponibilité, latence et historique sur 24 heures.",
   "entry": "index.html",
   "api_version": 1,
   "category": "monitoring",
@@ -21,7 +21,7 @@
   "translations": {
     "fr": {
       "name": "Statut des serveurs",
-      "description": "DisponibilitÃ© HTTP et latence rÃ©elle de vos services configurÃ©s."
+      "description": "Suivi HTTP de vos services : disponibilité, latence et historique sur 24 heures."
     },
     "en": {
       "name": "Server status",

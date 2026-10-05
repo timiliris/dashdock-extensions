@@ -415,8 +415,8 @@
       "manifest": {
         "id": "server-status",
         "name": "Statut des serveurs",
-        "version": "1.2.0",
-        "description": "DisponibilitÃ© HTTP et latence rÃ©elle de vos services configurÃ©s.",
+        "version": "1.2.1",
+        "description": "Suivi HTTP de vos services : disponibilité, latence et historique sur 24 heures.",
         "entry": "index.html",
         "api_version": 1,
         "category": "monitoring",
@@ -435,7 +435,7 @@
         "translations": {
           "fr": {
             "name": "Statut des serveurs",
-            "description": "DisponibilitÃ© HTTP et latence rÃ©elle de vos services configurÃ©s."
+            "description": "Suivi HTTP de vos services : disponibilité, latence et historique sur 24 heures."
           },
           "en": {
             "name": "Server status",
@@ -451,8 +451,8 @@
         },
         {
           "path": "app.js",
-          "size": 9560,
-          "sha256": "ddd84bc1c61036f5c415d62b8cd29e49fdcc286aa20e02435015f2591e3e4fb7"
+          "size": 9604,
+          "sha256": "9708422ce23f3ace7f7173d566cbe1e87b73616e4f5fb1958dcdfe0fed1ff8ee"
         },
         {
           "path": "bridge.js",
@@ -461,13 +461,13 @@
         },
         {
           "path": "index.html",
-          "size": 2198,
-          "sha256": "9a38bd3cf0bd775822b30105dc16d95b78c30a1f1d0776e9618c126c7a1f6c6d"
+          "size": 2179,
+          "sha256": "4ff078a9bfc18cfda5f842304d96475b7267fd8c2f9850dfedfe61a5d8c5ceb1"
         },
         {
           "path": "manifest.json",
-          "size": 734,
-          "sha256": "d11f5dc00d9b014dbdc7a955090f8b8350860e67788a230b4ae5187d16983494"
+          "size": 750,
+          "sha256": "e7fa9c5a92bb63409174d6f5c5fa45d28ad3e36e510cf69cd72dde49e7821aa1"
         },
         {
           "path": "style.css",

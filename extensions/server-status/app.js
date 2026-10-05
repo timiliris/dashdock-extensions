@@ -13,10 +13,11 @@
     $('range').setAttribute('aria-label', dash.t('Période du graphique', 'Chart time range'));
     const time = Math.floor(Date.now()/1000), hours = Number($('range').value)||24, start = time-hours*3600;
     const points = (history?.points || []).filter(p => Number.isFinite(p.checked_at) && p.checked_at >= start && p.checked_at <= time);
+    const plotStart = points.length > 1 ? Math.max(start,points[0].checked_at) : time-60;
     const max = Math.max(10,...points.filter(p=>p.online && Number.isFinite(p.latency_ms)).map(p=>p.latency_ms));
     let path = '', previous = null, marks = '';
     for(const p of points) {
-      const x = Math.max(0,Math.min(360,(p.checked_at-start)/(time-start)*360)).toFixed(2);
+      const x = Math.max(0,Math.min(360,(p.checked_at-plotStart)/Math.max(1,time-plotStart)*360)).toFixed(2);
       if(p.online && Number.isFinite(p.latency_ms)) {
         const y = (82-Math.min(1,p.latency_ms/max)*72).toFixed(2);
         path += `${previous && p.checked_at-previous.checked_at<=120 ? 'L' : 'M'}${x},${y} `;
@@ -26,7 +27,7 @@
     }
     $('chart').innerHTML = `<path d="M0,82H360 M0,46H360 M0,10H360" stroke="var(--border)" fill="none" stroke-dasharray="3 5"/><path d="${path}" stroke="var(--accent)" stroke-width="2" fill="none"/>${marks}`;
     const format = seconds => new Date(seconds*1000).toLocaleTimeString(dash.lang,{hour:'2-digit',minute:'2-digit'});
-    $('chart-start').textContent = format(start); $('chart-end').textContent = format(time); $('chart-max').textContent = `${max} ms`;
+    $('chart-start').textContent = format(plotStart); $('chart-end').textContent = format(time); $('chart-max').textContent = `${max} ms`;
     $('history-empty').textContent = points.length < 2 ? dash.t('Collecte en cours · prochain relevé dans une minute', 'Collecting data · next check in one minute') : '';
     const offline = points.filter(p=>!p.online).length;
     const summary = points.length ? `${points.length} ${dash.t('relevés','checks')} · ${((points.length-offline)/points.length*100).toFixed(1)} % ${dash.t('réussis','successful')} · ${offline} ${dash.t('indisponibles','unavailable')}` : dash.t('Aucune mesure pour cette période','No checks in this time range');
@@ -43,25 +44,25 @@
   function render() {
     renderHistory();
     $('refresh').textContent = dash.t('Actualiser', 'Refresh');
-    $('label').textContent = dash.t('Service Ã  surveiller', 'Service to monitor');
+    $('label').textContent = dash.t('Service à surveiller', 'Service to monitor');
     $('apply').textContent = dash.t('Choisir', 'Select');
-    $('note').textContent = preview() ? dash.t('AperÃ§u : crÃ©ation de service dÃ©sactivÃ©e.', 'Preview: service creation is disabled.') : dash.t('Ajoutez lâ€™URL HTTP de votre service, puis choisissez le service Ã  surveiller.', 'Add your serviceâ€™s HTTP URL, then select the service to monitor.');
+    $('note').textContent = preview() ? dash.t('Aperçu : création de service désactivée.', 'Preview: service creation is disabled.') : dash.t('Ajoutez l’URL HTTP de votre service, puis choisissez le service à surveiller.', 'Add your service’s HTTP URL, then select the service to monitor.');
     $('create-title').textContent = dash.t('Ajouter un service', 'Add a service');
     $('service-name-label').textContent = dash.t('Nom du service', 'Service name');
     $('service-url-label').textContent = dash.t('Adresse HTTP ou HTTPS', 'HTTP or HTTPS address');
-    $('create-service').textContent = busy ? dash.t('En coursâ€¦', 'Workingâ€¦') : dash.t('Ajouter et surveiller', 'Add and monitor');
+    $('create-service').textContent = busy ? dash.t('En cours…', 'Working…') : dash.t('Ajouter et surveiller', 'Add and monitor');
     for (const id of ['service-name','service-url','create-service']) $(id).disabled = busy || !ready || preview();
     const chosen = $('target').value || dash.config.target;
     $('target').replaceChildren();
-    if (!targets.length) { const option = new Option(dash.t('Aucun service configurÃ©', 'No configured services'), ''); $('target').append(option); }
+    if (!targets.length) { const option = new Option(dash.t('Aucun service configuré', 'No configured services'), ''); $('target').append(option); }
     for (const target of targets) $('target').append(new Option(target.name, target.id));
     if (chosen) $('target').value = chosen;
     $('apply').disabled = busy || !targets.length;
     $('refresh').disabled = busy || !dash.config.target;
-    $('name').textContent = latest?.name || dash.t('DisponibilitÃ©', 'Availability');
-    $('state').textContent = busy ? dash.t('VÃ©rificationâ€¦', 'Checkingâ€¦') : latest ? (latest.online ? dash.t('En ligne', 'Online') : dash.t('Indisponible', 'Unavailable')) : dash.t('Choisissez un service', 'Select a service');
+    $('name').textContent = latest?.name || dash.t('Disponibilité', 'Availability');
+    $('state').textContent = busy ? dash.t('Vérification…', 'Checking…') : latest ? (latest.online ? dash.t('En ligne', 'Online') : dash.t('Indisponible', 'Unavailable')) : dash.t('Choisissez un service', 'Select a service');
     $('status').className = `status ${latest ? (latest.online ? 'online' : 'offline') : ''}`;
-    $('latency').textContent = latest?.latency_ms != null ? `${latest.latency_ms} ms` : 'â€”';
+    $('latency').textContent = latest?.latency_ms != null ? `${latest.latency_ms} ms` : '—';
     $('code').textContent = latest?.status_code ? `HTTP ${latest.status_code}` : '';
     $('checked').textContent = latest?.checked_at ? new Date(typeof latest.checked_at === 'number' ? latest.checked_at * 1000 : latest.checked_at).toLocaleTimeString(dash.lang, {hour:'2-digit',minute:'2-digit'}) : '';
     $('endpoint').textContent = latest?.url || '';
@@ -100,7 +101,7 @@
       await dash.save({target:service.id});
       latest = null; $('service-name').value = ''; $('service-url').value = '';
     } catch (error) {
-      $('error').textContent = created ? dash.t('Service ajoutÃ©, mais sa sÃ©lection a Ã©chouÃ©. Actualisez les rÃ©glages et choisissez-le dans la liste.', 'Service added, but selection failed. Refresh settings and select it from the list.') : dash.t('Service non ajoutÃ©. VÃ©rifiez le nom, lâ€™adresse et votre autorisation.', 'Service was not added. Check the name, address and your permission.');
+      $('error').textContent = created ? dash.t('Service ajouté, mais sa sélection a échoué. Actualisez les réglages et choisissez-le dans la liste.', 'Service added, but selection failed. Refresh settings and select it from the list.') : dash.t('Service non ajouté. Vérifiez le nom, l’adresse et votre autorisation.', 'Service was not added. Check the name, address and your permission.');
     } finally { busy = false; render(); }
     if (!$('error').textContent) await check();
   };
