@@ -35,6 +35,7 @@ node tests/practical.cjs
 node tests/scratchpad.cjs
 node tests/converters.cjs
 node tests/habits.cjs
+node tests/third-party.cjs
 node tests/extensions.cjs
 node tests/scaffold.mjs
 ```

@@ -1,0 +1,29 @@
+{
+  "id": "cloudflare",
+  "name": "Cloudflare",
+  "description": "Zones, état et enregistrements DNS Cloudflare.",
+  "version": "1.0.0",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "status",
+  "icon": "☁",
+  "permissions": [
+    "cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure",
+    "api"
+  ],
+  "translations": {
+    "fr": {
+      "name": "Cloudflare",
+      "description": "Zones, état et enregistrements DNS Cloudflare."
+    },
+    "en": {
+      "name": "Cloudflare",
+      "description": "Cloudflare zones, status and DNS records."
+    }
+  }
+}

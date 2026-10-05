@@ -1,0 +1,29 @@
+{
+  "id": "crowdsec",
+  "name": "CrowdSec",
+  "description": "Décisions de sécurité CrowdSec via une API locale ou distante.",
+  "version": "1.0.0",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "status",
+  "icon": "⛨",
+  "permissions": [
+    "crowdsec"
+  ],
+  "tags": [
+    "crowdsec",
+    "security",
+    "infrastructure",
+    "api"
+  ],
+  "translations": {
+    "fr": {
+      "name": "CrowdSec",
+      "description": "Décisions de sécurité CrowdSec via une API locale ou distante."
+    },
+    "en": {
+      "name": "CrowdSec",
+      "description": "CrowdSec security decisions through a local or remote API."
+    }
+  }
+}

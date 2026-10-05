@@ -252,6 +252,69 @@
     },
     {
       "manifest": {
+        "id": "cloudflare",
+        "name": "Cloudflare",
+        "description": "Zones, état et enregistrements DNS Cloudflare.",
+        "version": "1.0.0",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "status",
+        "icon": "☁",
+        "permissions": [
+          "cloudflare"
+        ],
+        "tags": [
+          "cloudflare",
+          "security",
+          "infrastructure",
+          "api"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Cloudflare",
+            "description": "Zones, état et enregistrements DNS Cloudflare."
+          },
+          "en": {
+            "name": "Cloudflare",
+            "description": "Cloudflare zones, status and DNS records."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 745,
+          "sha256": "d0271c3d25356832153cbda0bcb50a3035ed84bb9ced04046effaac0d10c83b6"
+        },
+        {
+          "path": "app.js",
+          "size": 8517,
+          "sha256": "268e79da78f1043b89a4ed7ce6ac093def498894386a1ac0a084a7c82715199b"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3354,
+          "sha256": "ee85d5971e225f144682b798cc80e1e48b622bf7c937ccf38d58ce315fd2ab29"
+        },
+        {
+          "path": "index.html",
+          "size": 803,
+          "sha256": "6771a7a4fba65465f806c3cdeb591ebeef18ff44aae2cc67ff8271cf515e51d9"
+        },
+        {
+          "path": "manifest.json",
+          "size": 603,
+          "sha256": "2687758602e32293da93a15d03ce526c00a0c53574b693f5a0456ba7653b7069"
+        },
+        {
+          "path": "style.css",
+          "size": 2466,
+          "sha256": "c12e5b66cc725b1d7231d853c8e00bfb669672284e30cd74a03828c79f002c3d"
+        }
+      ]
+    },
+    {
+      "manifest": {
         "id": "countdown",
         "name": "Compte à rebours",
         "version": "1.0.0",
@@ -309,6 +372,69 @@
           "path": "style.css",
           "size": 1882,
           "sha256": "ca8479b43e87fb4b37ca109ab76b91cfa3e857ea1b940113db4e29e24192e617"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "crowdsec",
+        "name": "CrowdSec",
+        "description": "Décisions de sécurité CrowdSec via une API locale ou distante.",
+        "version": "1.0.0",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "status",
+        "icon": "⛨",
+        "permissions": [
+          "crowdsec"
+        ],
+        "tags": [
+          "crowdsec",
+          "security",
+          "infrastructure",
+          "api"
+        ],
+        "translations": {
+          "fr": {
+            "name": "CrowdSec",
+            "description": "Décisions de sécurité CrowdSec via une API locale ou distante."
+          },
+          "en": {
+            "name": "CrowdSec",
+            "description": "CrowdSec security decisions through a local or remote API."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 953,
+          "sha256": "6eb6af1e0d4e799dd869f96fc7d2845da0aa99df1904b84b7fe57701376c7a04"
+        },
+        {
+          "path": "app.js",
+          "size": 8515,
+          "sha256": "015d7878ca762e79bc57eb85265b731c6f38bb5c76692dbb90169106904bb316"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3354,
+          "sha256": "ee85d5971e225f144682b798cc80e1e48b622bf7c937ccf38d58ce315fd2ab29"
+        },
+        {
+          "path": "index.html",
+          "size": 801,
+          "sha256": "29a106e9bb8ed820bc754296e6187a9ed11da42aee4a1ba08988190e9a2e7d5c"
+        },
+        {
+          "path": "manifest.json",
+          "size": 644,
+          "sha256": "9c22d80fd1ea3800a81046e3b6afa1605909ed44af8cc4673f372fb2011ee385"
+        },
+        {
+          "path": "style.css",
+          "size": 2466,
+          "sha256": "c12e5b66cc725b1d7231d853c8e00bfb669672284e30cd74a03828c79f002c3d"
         }
       ]
     },

@@ -18,5 +18,6 @@ jobs:
       - run: node tests/scratchpad.cjs
       - run: node tests/converters.cjs
       - run: node tests/habits.cjs
+      - run: node tests/third-party.cjs
       - run: node tests/extensions.cjs
       - run: node tests/scaffold.mjs
