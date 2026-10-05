@@ -1,11 +1,9 @@
 # Tailscale
 
-Read-only tailnet inventory, device addresses, approval status and last-seen timestamps. Last seen is not a live connectivity guarantee. Store previews are explicitly marked demo data. Credentials stay in the DashDock server environment. Refresh/cache: 60 seconds, 2 MiB / 2,000 devices maximum, first 20 matching devices displayed.
+## Setup in the interface / Configuration dans l’interface
 
-## Setup / Configuration
+Open **Connections** in the DashDock sidebar, or **Configure connection** in widget settings. Enter credentials in the trusted DashDock panel, then **Save** and **Test connection**. No .env edit or Docker restart is required. Keys stay on the server and are never returned to extensions or included in dashboard exports. Blank password fields preserve an existing key; Disconnect clears the saved connection. Provider connections are shared; zone/device filters remain per widget. Requires DashDock server support for saved connections.
 
-Create a Tailscale OAuth client with **Devices → Core → Read** (`devices:core:read`). Set `DASHDOCK_TAILSCALE_CLIENT_ID` and `DASHDOCK_TAILSCALE_CLIENT_SECRET` in the server `.env`. Tokens renew automatically. Alternatively set `DASHDOCK_TAILSCALE_API_KEY` to an API access token (`tskey-api`), which takes precedence. An enrollment auth key (`tskey-auth`) is not an API access token.
+Use OAuth with Devices → Core → Read (devices:core:read), client ID and secret; tokens renew automatically. Alternatively use an API access token (tskey-api), not an enrollment key (tskey-auth). Tailnet “-” selects your credential’s network. Last seen is an API observation, not a live connectivity guarantee. Up to 2,000 devices / 2 MiB; first twenty matching devices displayed.
 
-`DASHDOCK_TAILSCALE_TAILNET=-` selects the default network associated with your credentials; an explicit tailnet identifier is also supported. Run `docker compose up -d --build`, add the widget, then use its settings to check the connection and optionally save a device filter. No device changes, ACL changes or approval actions are exposed.
-
-[Official OAuth guide](https://tailscale.com/docs/features/oauth-clients) · [Read-only scope reference](https://tailscale.com/docs/reference/trust-credentials)
+Read-only, zero external frontend dependencies. Store previews use labeled fictional data and cannot request private provider data. Refresh/cache: 60 seconds.

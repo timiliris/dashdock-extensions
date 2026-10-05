@@ -255,7 +255,7 @@
         "id": "cloudflare",
         "name": "Cloudflare",
         "description": "Zones, état et enregistrements DNS Cloudflare.",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "entry": "index.html",
         "api_version": 1,
         "category": "monitoring",
@@ -283,13 +283,13 @@
       "files": [
         {
           "path": "README.md",
-          "size": 745,
-          "sha256": "d0271c3d25356832153cbda0bcb50a3035ed84bb9ced04046effaac0d10c83b6"
+          "size": 974,
+          "sha256": "87d05e61ad29f7ba41a657d817cb5caaa588d0aefc1888719b52e74afa3b26bb"
         },
         {
           "path": "app.js",
-          "size": 8517,
-          "sha256": "268e79da78f1043b89a4ed7ce6ac093def498894386a1ac0a084a7c82715199b"
+          "size": 8283,
+          "sha256": "2d88301b4dfc050f488b37806e5eb55a9d26c966e7b579490bf0c0f0f6f95d3f"
         },
         {
           "path": "bridge.js",
@@ -304,7 +304,7 @@
         {
           "path": "manifest.json",
           "size": 607,
-          "sha256": "1776470ea9bfd8db32cb1a4715ca297d6fe70bc467db8fee4f036b35c42e2611"
+          "sha256": "eb67882643bdf263f4c1f8c2412529af41c2f6d8ce58534e2a21025dd6f5c00f"
         },
         {
           "path": "style.css",
@@ -380,7 +380,7 @@
         "id": "crowdsec",
         "name": "CrowdSec",
         "description": "Décisions de sécurité CrowdSec via une API locale ou distante.",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "entry": "index.html",
         "api_version": 1,
         "category": "monitoring",
@@ -408,13 +408,13 @@
       "files": [
         {
           "path": "README.md",
-          "size": 953,
-          "sha256": "6eb6af1e0d4e799dd869f96fc7d2845da0aa99df1904b84b7fe57701376c7a04"
+          "size": 1037,
+          "sha256": "ea817b348487633bbbda9ea7c642c6b254a33bcd61e34f39a3c8efe4bb365943"
         },
         {
           "path": "app.js",
-          "size": 8515,
-          "sha256": "015d7878ca762e79bc57eb85265b731c6f38bb5c76692dbb90169106904bb316"
+          "size": 8281,
+          "sha256": "575d770141e76bc421929e19b9cbf30bb8fec4af279e8d75fbcd5b2b7dd08995"
         },
         {
           "path": "bridge.js",
@@ -429,7 +429,7 @@
         {
           "path": "manifest.json",
           "size": 648,
-          "sha256": "d4cf11ecab8837ffd9f9f069966478640da7f35f21a1dce6eb3aa198df1715d2"
+          "sha256": "f05176beb42f2d9902b8f3d60e1a967e2b85f1fcd030be0d78b2b9edf167314a"
         },
         {
           "path": "style.css",
@@ -928,7 +928,7 @@
         "id": "tailscale",
         "name": "Tailscale",
         "description": "Appareils du tailnet, adresses, autorisations et dernière activité.",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "entry": "index.html",
         "api_version": 1,
         "category": "monitoring",
@@ -957,13 +957,13 @@
       "files": [
         {
           "path": "README.md",
-          "size": 1267,
-          "sha256": "3f4cc9643e1ceda7db63305019cb72007b645890117b4c3b0d1cf3cafca1d4b8"
+          "size": 1163,
+          "sha256": "21cb4de56fc82017b0d071202da0f1667bbc0931817eeed5b7da12c071e45633"
         },
         {
           "path": "app.js",
-          "size": 7579,
-          "sha256": "827a5136adeae03ce96b6609a47e6fe9d042cc799480bfce6db7029cc57721eb"
+          "size": 7589,
+          "sha256": "0e85c37a073bed23efc4604acdef6431bef965e361e5270d163f3ad9a5135d86"
         },
         {
           "path": "bridge.js",
@@ -978,7 +978,7 @@
         {
           "path": "manifest.json",
           "size": 673,
-          "sha256": "6f72abd1f34ee300793c10b149fcc757e13a2d610db8ac017efa627cacca2c0f"
+          "sha256": "9710a7314281cb558cf4b5b62b3b1c265cf9f1ec1d8ce70a8202f8fa719e41e7"
         },
         {
           "path": "style.css",

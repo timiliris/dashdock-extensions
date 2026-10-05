@@ -1,9 +1,9 @@
 # Cloudflare
 
-Read-only integration with credentials on the DashDock server. Configure the variables below in the DashDock server `.env`, then run `docker compose up -d --build`. Never store keys in widget configuration. The preview uses explicitly labeled fictional data; real widgets never fabricate counts after an API failure.
+## Setup in the interface / Configuration dans l’interface
 
-Refresh/cache: 60 seconds. No external frontend dependencies or browser-side API keys.
+Open **Connections** in the DashDock sidebar, or **Configure connection** in widget settings. Enter credentials in the trusted DashDock panel, then **Save** and **Test connection**. No .env edit or Docker restart is required. Keys stay on the server and are never returned to extensions or included in dashboard exports. Blank password fields preserve an existing key; Disconnect clears the saved connection. Provider connections are shared; zone/device filters remain per widget. Requires DashDock server support for saved connections.
 
-## Setup
+Create a Cloudflare token with Zone Read and DNS Read scoped to your zones. Select a zone in widget settings after connecting. Up to 200 zones and ten DNS records displayed; DNS contents are omitted.
 
-`DASHDOCK_CLOUDFLARE_TOKEN`: Cloudflare API token with Zone Read and DNS Read scoped to your zones. Select a zone in the widget settings. Up to 200 zones; first 10 DNS records displayed. DNS values are omitted. [Official API](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/list/).
+Read-only, zero external frontend dependencies. Store previews use labeled fictional data and cannot request private provider data. Refresh/cache: 60 seconds.

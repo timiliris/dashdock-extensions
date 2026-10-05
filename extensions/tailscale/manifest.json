@@ -2,7 +2,7 @@
   "id": "tailscale",
   "name": "Tailscale",
   "description": "Appareils du tailnet, adresses, autorisations et dernière activité.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "entry": "index.html",
   "api_version": 1,
   "category": "monitoring",

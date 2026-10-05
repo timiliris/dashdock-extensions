@@ -38,10 +38,14 @@ const PROVIDER='crowdsec';
     }catch(e){if(at===generation){data=null;error(e.message);}}
     finally{if(at===generation){busy=false;render();}}
   }
-  function setup(){const root=$('setup');root.replaceChildren();root.append(el('h3',t('Configuration serveur (.env)','Server configuration (.env)')));for(const key of CF?['DASHDOCK_CLOUDFLARE_TOKEN']:['DASHDOCK_CROWDSEC_URL','DASHDOCK_CROWDSEC_BOUNCER_KEY'])root.append(el('code',key+'=…'));root.append(el('p',CF?t('Créez un jeton API Cloudflare avec les permissions de lecture puis recréez le conteneur.','Create a Cloudflare API token with read permissions, then recreate the container.'):t('Créez la clé sur votre serveur avec : cscli bouncers add dashdock. URL racine sans /v1, par exemple http://host.docker.internal:8081 ou https://crowdsec.example.com. Recréez ensuite le conteneur.','Create the key on your server: cscli bouncers add dashdock. Root URL without /v1, e.g. http://host.docker.internal:8081 or https://crowdsec.example.com. Then recreate the container.'),'muted'));}
+
+ function setup(){const root=$('setup');root.replaceChildren();const button=el('button',t('Configurer la connexion','Configure connection'));button.type='button';button.addEventListener('click',async()=>{try{await dash.request('connections.open');}catch(e){showSetupError(e.message);}});root.append(button,el('p',t('Renseignez vos identifiants dans le volet Connexions de DashDock. Aucun redémarrage nécessaire.','Enter credentials in DashDock’s Connections panel. No restart required.'),'muted'));}
+ function showSetupError(code){error(code);}
+
   $('zone').addEventListener('change',async()=>{const value=$('zone').value;busy=true;render();try{await dash.save({...dash.config,zone:value});$('error').textContent=t('Zone enregistrée.','Zone saved.');}catch(e){error(e.message);}finally{busy=false;render();}});
   $('refresh').addEventListener('click',load);$('connect').addEventListener('click',load);
   addEventListener('dashdock:context',()=>{if(ready&&!settings)load();});addEventListener('dashdock:language',()=>{setup();render();});
   async function start(){try{await dash.start();ready=true;setup();await load();timer=setInterval(()=>{if(!document.hidden&&!settings&&!busy)load();},60000);}catch(e){error(e.message);$('content').replaceChildren(el('p',t('Configuration indisponible. Rechargez le widget.','Configuration unavailable. Reload the widget.'),'muted'));}}
-  addEventListener('pagehide',()=>clearInterval(timer));setup();render();start();
+  addEventListener('message',e=>{if(e.source===parent&&e.data?.type==='dashdock:connection-changed')load();});
+ addEventListener('pagehide',()=>clearInterval(timer));setup();render();start();
 })();
