@@ -180,7 +180,7 @@ L’assistant déclare `ai` et `dashboard`. Le pont joint automatiquement l’in
 | `stopwatch.start` | `{}` | Identifiant d’un chronomètre prêt |
 | `stopwatch.pause` | `{}` | Identifiant d’un chronomètre prêt |
 | `stopwatch.reset` | `{}` | Identifiant d’un chronomètre prêt |
-| `service.create` | `{name, url}` | Identifiant d’un widget Statut des serveurs ou `''` pour créer aussi un widget |
+| `service.create` | `{name, url}` | `widget_id: ''` obligatoire : enregistre le service et crée un nouveau widget, sans remplacer une carte existante |
 | `service.select` | `{target}` | Identifiant d’un widget Statut des serveurs existant ; `target` est un identifiant de service |
 
 Le chronomètre annonce `parent.postMessage({type:'dashdock:ready', actions:['start','pause','reset']}, '*')`. Il accepte ensuite les messages du parent `{type:'dashdock:action', requestId, action:'start', arguments:{}}` et répond `{type:'dashdock:action-result', requestId, result:{running:true, elapsed_ms:0}}` ou `{type:'dashdock:action-result', requestId, error:'unsupported_action'}`. Toujours vérifier `event.source === parent` et l’action reçue. Les commandes démarrer et pause sont idempotentes. Le chronomètre conserve son temps entre une pause et une reprise, et se réinitialise au rechargement.
