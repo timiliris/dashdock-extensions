@@ -2,10 +2,10 @@
   "id": "cloudflare",
   "name": "Cloudflare",
   "description": "Zones, état et enregistrements DNS Cloudflare.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "entry": "index.html",
   "api_version": 1,
-  "category": "status",
+  "category": "monitoring",
   "icon": "☁",
   "permissions": [
     "cloudflare"

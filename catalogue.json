@@ -255,10 +255,10 @@
         "id": "cloudflare",
         "name": "Cloudflare",
         "description": "Zones, état et enregistrements DNS Cloudflare.",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "entry": "index.html",
         "api_version": 1,
-        "category": "status",
+        "category": "monitoring",
         "icon": "☁",
         "permissions": [
           "cloudflare"
@@ -303,8 +303,8 @@
         },
         {
           "path": "manifest.json",
-          "size": 603,
-          "sha256": "2687758602e32293da93a15d03ce526c00a0c53574b693f5a0456ba7653b7069"
+          "size": 607,
+          "sha256": "1776470ea9bfd8db32cb1a4715ca297d6fe70bc467db8fee4f036b35c42e2611"
         },
         {
           "path": "style.css",
@@ -380,10 +380,10 @@
         "id": "crowdsec",
         "name": "CrowdSec",
         "description": "Décisions de sécurité CrowdSec via une API locale ou distante.",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "entry": "index.html",
         "api_version": 1,
-        "category": "status",
+        "category": "monitoring",
         "icon": "⛨",
         "permissions": [
           "crowdsec"
@@ -428,8 +428,8 @@
         },
         {
           "path": "manifest.json",
-          "size": 644,
-          "sha256": "9c22d80fd1ea3800a81046e3b6afa1605909ed44af8cc4673f372fb2011ee385"
+          "size": 648,
+          "sha256": "d4cf11ecab8837ffd9f9f069966478640da7f35f21a1dce6eb3aa198df1715d2"
         },
         {
           "path": "style.css",
