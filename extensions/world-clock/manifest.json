@@ -1,0 +1,28 @@
+{
+  "id": "world-clock",
+  "name": "Horloges du monde",
+  "version": "1.0.0",
+  "description": "Comparez quatre villes avec les fuseaux et changements d’heure automatiques.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "tools",
+  "icon": "◷",
+  "permissions": [],
+  "tags": [
+    "clock",
+    "time",
+    "timezone",
+    "horloge",
+    "ville"
+  ],
+  "translations": {
+    "fr": {
+      "name": "Horloges du monde",
+      "description": "Comparez quatre villes avec les fuseaux et changements d’heure automatiques."
+    },
+    "en": {
+      "name": "World clock",
+      "description": "Compare four cities with automatic time zones and daylight saving changes."
+    }
+  }
+}

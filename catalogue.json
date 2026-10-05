@@ -437,6 +437,73 @@
     },
     {
       "manifest": {
+        "id": "habit-tracker",
+        "name": "Habitudes",
+        "version": "1.0.0",
+        "description": "Cochez vos habitudes du jour et retrouvez votre semaine, selon la date locale de votre navigateur.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "productivity",
+        "icon": "✓",
+        "permissions": [],
+        "tags": [
+          "habits",
+          "routine",
+          "daily",
+          "habitudes",
+          "suivi"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Habitudes",
+            "description": "Cochez vos habitudes du jour et retrouvez votre semaine, selon la date locale de votre navigateur."
+          },
+          "en": {
+            "name": "Habits",
+            "description": "Check off today's habits and see your week using your browser's local calendar date."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 987,
+          "sha256": "69989a1791c2d80ac36d355e542e4b0d89e925b907ec19fbc9a4f2aa28e14d17"
+        },
+        {
+          "path": "app.js",
+          "size": 7275,
+          "sha256": "fe1519aab0a04dc70462aff464fcfb8580b354fbe872dabb85d20b1281d32dcd"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3205,
+          "sha256": "bcc7434c1049c39f95609b6c80f936f63e8d4c114bbfbd4db2ebe982818949af"
+        },
+        {
+          "path": "index.html",
+          "size": 1064,
+          "sha256": "e00f1022bd215492932fbdb27552f52243670592c5a0290c384f572dd9baa14b"
+        },
+        {
+          "path": "manifest.json",
+          "size": 676,
+          "sha256": "bb82807d1b4d4528fd6e928b13292242144d0d5555024f07144346bf5117936b"
+        },
+        {
+          "path": "model.js",
+          "size": 2047,
+          "sha256": "aa8e888f472c07603dfb35217de7a3a942c9c152c3834eda22d9b6ada50f2084"
+        },
+        {
+          "path": "style.css",
+          "size": 2715,
+          "sha256": "8e1e11a576f6415fbbb1b3c12c01a6534717cb4d5a22e58f1577f6a0cd62b69d"
+        }
+      ]
+    },
+    {
+      "manifest": {
         "id": "hello",
         "name": "Premier widget",
         "version": "1.0.0",
@@ -732,6 +799,73 @@
     },
     {
       "manifest": {
+        "id": "unit-converter",
+        "name": "Convertisseur",
+        "version": "1.0.0",
+        "description": "Convertissez longueur, masse, température et stockage, sans connexion.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "tools",
+        "icon": "⇄",
+        "permissions": [],
+        "tags": [
+          "converter",
+          "units",
+          "temperature",
+          "storage",
+          "conversion"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Convertisseur",
+            "description": "Convertissez longueur, masse, température et stockage, sans connexion."
+          },
+          "en": {
+            "name": "Unit converter",
+            "description": "Convert length, mass, temperature and storage, entirely offline."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 613,
+          "sha256": "ff2d93e6ee78f7b55a6db17497fecc5b303e4fd3cfa2a792ad420ca49f365359"
+        },
+        {
+          "path": "app.js",
+          "size": 3466,
+          "sha256": "a987a1d370902d8226e8a0e80e96efdf93092e52d66ea255718c47f83db6f006"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3322,
+          "sha256": "47c160872b342fd486b5964b621ffdb77c5bd3b76f073bf721e322832fab3c8f"
+        },
+        {
+          "path": "core.js",
+          "size": 1982,
+          "sha256": "9f17cc087f568099f6bcb9686386f633a6493d2f9e2bc30db2b8acc0db5e9b8d"
+        },
+        {
+          "path": "index.html",
+          "size": 952,
+          "sha256": "98c0dd3a51656930982603643c28c29b27fa22d7a1ab27b221a2b7a82a80c85d"
+        },
+        {
+          "path": "manifest.json",
+          "size": 682,
+          "sha256": "73583418d7f5afaaff022e2fd2e0cdc6a76d869ddeeb7a52da8ffcf76f409a6d"
+        },
+        {
+          "path": "style.css",
+          "size": 1630,
+          "sha256": "9f4c8aa8a5408408bb77d17b5539ba2c7bb5de2fbf2be3656b600eb6103da1a7"
+        }
+      ]
+    },
+    {
+      "manifest": {
         "id": "weather",
         "name": "Météo",
         "version": "1.0.0",
@@ -785,6 +919,73 @@
           "path": "style.css",
           "size": 2591,
           "sha256": "57090628185d835d7dbf498fb57c5622d2e31181f489cf8037591ac8d1258742"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "world-clock",
+        "name": "Horloges du monde",
+        "version": "1.0.0",
+        "description": "Comparez quatre villes avec les fuseaux et changements d’heure automatiques.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "tools",
+        "icon": "◷",
+        "permissions": [],
+        "tags": [
+          "clock",
+          "time",
+          "timezone",
+          "horloge",
+          "ville"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Horloges du monde",
+            "description": "Comparez quatre villes avec les fuseaux et changements d’heure automatiques."
+          },
+          "en": {
+            "name": "World clock",
+            "description": "Compare four cities with automatic time zones and daylight saving changes."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 456,
+          "sha256": "a63b02a61a6e75f5c4bf691751384d81fbcfe7325bfae5fe47d5449c96b7f202"
+        },
+        {
+          "path": "app.js",
+          "size": 4697,
+          "sha256": "a88b0008466872d83256fcdbbf99ac29deae07569e6782e6afa3921626873f36"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3322,
+          "sha256": "47c160872b342fd486b5964b621ffdb77c5bd3b76f073bf721e322832fab3c8f"
+        },
+        {
+          "path": "core.js",
+          "size": 1488,
+          "sha256": "e9b8b18dd0544a4d97667c5eda6a422489433d80aa326cbe77f352e5c5e15d85"
+        },
+        {
+          "path": "index.html",
+          "size": 698,
+          "sha256": "cb92f5c9b741f05732eb85baf5edec944dc1bc589dfeeddc7f6461ec190edaa2"
+        },
+        {
+          "path": "manifest.json",
+          "size": 695,
+          "sha256": "3b313970004d891465e3251d497a2dd22a6c2169ec946b3f72805e20553a6708"
+        },
+        {
+          "path": "style.css",
+          "size": 1795,
+          "sha256": "13d23e9a0e3c33322a5279b6d5cd7adf77b4fb01cc6421037e91c143b2b91fc2"
         }
       ]
     }

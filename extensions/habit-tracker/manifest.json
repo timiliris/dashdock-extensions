@@ -1,0 +1,16 @@
+{
+  "id": "habit-tracker",
+  "name": "Habitudes",
+  "version": "1.0.0",
+  "description": "Cochez vos habitudes du jour et retrouvez votre semaine, selon la date locale de votre navigateur.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "productivity",
+  "icon": "✓",
+  "permissions": [],
+  "tags": ["habits", "routine", "daily", "habitudes", "suivi"],
+  "translations": {
+    "fr": {"name": "Habitudes", "description": "Cochez vos habitudes du jour et retrouvez votre semaine, selon la date locale de votre navigateur."},
+    "en": {"name": "Habits", "description": "Check off today's habits and see your week using your browser's local calendar date."}
+  }
+}

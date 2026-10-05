@@ -49,6 +49,10 @@ L’API v1 fournit une passerelle contrôlée vers les intégrations backend et 
 | `bookmarks` | Favoris et raccourcis organisés, avec recherche | Liens HTTP(S) ; réglages persistants par widget ; permission `links` |
 | `countdown` | Compte à rebours vers un événement | Échéance sauvegardée par widget ; heure du navigateur ; aucune notification système |
 | `scratchpad` | Bloc-notes éditable avec sauvegarde différée | Texte sauvegardé par widget ; taille limitée pour respecter la configuration du serveur |
+| `world-clock` | Horloges de plusieurs fuseaux horaires | Zones IANA configurables, changements d’heure gérés par le navigateur |
+| `unit-converter` | Conversion de longueur, masse, température et stockage | Calculs locaux ; aucune requête réseau |
+| `habit-tracker` | Suivi quotidien des habitudes | Historique borné et sauvegardé par widget ; jours calculés dans le fuseau local du navigateur |
+| `stopwatch` | Chronomètre avec pause, reprise et remise à zéro | Session courante ; pilotable par l’assistant IA |
 | `weather` | Recherche de ville et météo réelle Open-Meteo | Réseau requis ; pas de clé ; ville persistante par widget |
 | `news` | Titres et liens RSS/Atom | Flux définis par l’administrateur ; flux choisi persistant ; permission `links` pour ouvrir les articles |
 | `assistant` | Chat OpenRouter, Ollama ou LM Studio | Fournisseur et modèle persistants ; conversation limitée à la session |

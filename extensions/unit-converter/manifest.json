@@ -1,0 +1,28 @@
+{
+  "id": "unit-converter",
+  "name": "Convertisseur",
+  "version": "1.0.0",
+  "description": "Convertissez longueur, masse, température et stockage, sans connexion.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "tools",
+  "icon": "⇄",
+  "permissions": [],
+  "tags": [
+    "converter",
+    "units",
+    "temperature",
+    "storage",
+    "conversion"
+  ],
+  "translations": {
+    "fr": {
+      "name": "Convertisseur",
+      "description": "Convertissez longueur, masse, température et stockage, sans connexion."
+    },
+    "en": {
+      "name": "Unit converter",
+      "description": "Convert length, mass, temperature and storage, entirely offline."
+    }
+  }
+}
