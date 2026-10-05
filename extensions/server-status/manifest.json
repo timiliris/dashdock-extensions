@@ -1,7 +1,7 @@
 {
   "id": "server-status",
   "name": "Statut des serveurs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Disponibilité HTTP et latence réelle de vos services configurés.",
   "entry": "index.html",
   "api_version": 1,

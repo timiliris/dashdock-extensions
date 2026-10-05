@@ -415,7 +415,7 @@
       "manifest": {
         "id": "server-status",
         "name": "Statut des serveurs",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "description": "Disponibilité HTTP et latence réelle de vos services configurés.",
         "entry": "index.html",
         "api_version": 1,
@@ -446,8 +446,8 @@
       "files": [
         {
           "path": "app.js",
-          "size": 4924,
-          "sha256": "edb671b7dcf3fc5b538e05a16092a8ada502fd4f8852649d543331897a50ace2"
+          "size": 5215,
+          "sha256": "e8f84397b907aa4d1cbe44d7e243f0b74e51780f08fea1b810bff6d546f49f09"
         },
         {
           "path": "bridge.js",
@@ -462,7 +462,7 @@
         {
           "path": "manifest.json",
           "size": 719,
-          "sha256": "1cb340d90e10244b2972f096c76ab27a43677dea7d435e78d750e251a0edbda1"
+          "sha256": "ff8f79d0f557d39d3b2418f10e051c03be9cb5989ced7e097a159c77850deb30"
         },
         {
           "path": "style.css",

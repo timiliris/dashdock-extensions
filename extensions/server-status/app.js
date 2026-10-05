@@ -56,7 +56,13 @@
     if (!$('error').textContent) await check();
   };
   addEventListener('dashdock:language', render);
-  addEventListener('dashdock:context', ()=>{render();if(document.documentElement.dataset.view==='widget')check();});
+  addEventListener('dashdock:context', async ()=>{
+    if(ready && dash.config.target && !targets.some(target=>target.id===dash.config.target)) {
+      try {targets=await dash.request('status.targets');} catch(error) {$('error').textContent=error.message;}
+    }
+    if(dash.config.target) $('target').value=dash.config.target;
+    render();if(document.documentElement.dataset.view==='widget')check();
+  });
   render();
   (async () => { await dash.start(); try { targets = await dash.request('status.targets'); ready = true; render(); await check(); } catch(error) { $('error').textContent = error.message; } })();
   setInterval(check, 60000);
