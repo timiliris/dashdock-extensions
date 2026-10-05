@@ -475,6 +475,67 @@
     },
     {
       "manifest": {
+        "id": "stopwatch",
+        "name": "Chronomètre",
+        "version": "1.0.0",
+        "description": "Un chronomètre simple avec pause, reprise et remise à zéro.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "tools",
+        "icon": "◷",
+        "permissions": [],
+        "tags": [
+          "timer",
+          "time",
+          "chronomètre",
+          "stopwatch"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Chronomètre",
+            "description": "Un chronomètre simple avec pause, reprise et remise à zéro."
+          },
+          "en": {
+            "name": "Stopwatch",
+            "description": "A simple stopwatch with pause, resume and reset."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 419,
+          "sha256": "15bacb32b218711dea9671c0e4f6b43d225ecf9c88e6061ee0aef5a05d8e101f"
+        },
+        {
+          "path": "app.js",
+          "size": 2112,
+          "sha256": "e30d0a070f6277042edf4ada226612bdaf265a2148f1facb73e51f7ba9efa526"
+        },
+        {
+          "path": "index.html",
+          "size": 626,
+          "sha256": "a3e3a44fecc17b57b75fb0d843b6aa582f81f3c9c33e0bb2586fa4be831db4e4"
+        },
+        {
+          "path": "manifest.json",
+          "size": 560,
+          "sha256": "d76eafea6d5a99503521beb173b13040ea61f857c6ebc344f92692e0ec2e1c2b"
+        },
+        {
+          "path": "style.css",
+          "size": 1129,
+          "sha256": "e649297cd09afef4c54c280983bcbe86d4d5c21159f9cea9fcaefd05cebc3894"
+        },
+        {
+          "path": "theme.js",
+          "size": 1561,
+          "sha256": "c84fa847d5d039b65a83fb31729e2c934faddae2742f4d1e45acacd407ccb4d2"
+        }
+      ]
+    },
+    {
+      "manifest": {
         "id": "weather",
         "name": "Météo",
         "version": "1.0.0",
