@@ -1,7 +1,7 @@
 {
   "id": "server-status",
   "name": "Statut des serveurs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Suivi HTTP de vos services : disponibilité, latence et historique sur 24 heures.",
   "entry": "index.html",
   "api_version": 1,

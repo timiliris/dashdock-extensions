@@ -415,7 +415,7 @@
       "manifest": {
         "id": "server-status",
         "name": "Statut des serveurs",
-        "version": "1.2.1",
+        "version": "1.2.2",
         "description": "Suivi HTTP de vos services : disponibilité, latence et historique sur 24 heures.",
         "entry": "index.html",
         "api_version": 1,
@@ -467,12 +467,12 @@
         {
           "path": "manifest.json",
           "size": 750,
-          "sha256": "e7fa9c5a92bb63409174d6f5c5fa45d28ad3e36e510cf69cd72dde49e7821aa1"
+          "sha256": "5db377e0b5f109fc7ae35568f2b7141ab854fb4313beb5a0a81e57b3e8d31969"
         },
         {
           "path": "style.css",
-          "size": 4432,
-          "sha256": "6c384f454b501d840d2e7125dbde9e033f07cdfca6282d51806162dced3377d8"
+          "size": 4475,
+          "sha256": "6ddd82250c8243e6b828626ed55938632a4644b3348687b6c0ea663ca28a4ef4"
         },
         {
           "path": "verify.cjs",
