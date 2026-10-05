@@ -415,8 +415,8 @@
       "manifest": {
         "id": "server-status",
         "name": "Statut des serveurs",
-        "version": "1.1.1",
-        "description": "Disponibilité HTTP et latence réelle de vos services configurés.",
+        "version": "1.2.0",
+        "description": "DisponibilitÃ© HTTP et latence rÃ©elle de vos services configurÃ©s.",
         "entry": "index.html",
         "api_version": 1,
         "category": "monitoring",
@@ -435,39 +435,44 @@
         "translations": {
           "fr": {
             "name": "Statut des serveurs",
-            "description": "Disponibilité HTTP et latence réelle de vos services configurés."
+            "description": "DisponibilitÃ© HTTP et latence rÃ©elle de vos services configurÃ©s."
           },
           "en": {
             "name": "Server status",
-            "description": "Live HTTP availability and latency for your configured services."
+            "description": "HTTP service monitoring: availability, latency and 24-hour history."
           }
         }
       },
       "files": [
         {
+          "path": "README.md",
+          "size": 1471,
+          "sha256": "95501f47992b4f4f62889bf308337692fe17fbc64c778c907be78dfc633d08b7"
+        },
+        {
           "path": "app.js",
-          "size": 5215,
-          "sha256": "e8f84397b907aa4d1cbe44d7e243f0b74e51780f08fea1b810bff6d546f49f09"
+          "size": 9560,
+          "sha256": "ddd84bc1c61036f5c415d62b8cd29e49fdcc286aa20e02435015f2591e3e4fb7"
         },
         {
           "path": "bridge.js",
-          "size": 3028,
-          "sha256": "e89ef1b40a17c5c1dfb8aae2de79e9442c2a1e3298532621b4a91e6538d39982"
+          "size": 3140,
+          "sha256": "3b226b96538481d321a153b2d285cd76be27a7fd4eaf500a93060ef483f2de79"
         },
         {
           "path": "index.html",
-          "size": 1414,
-          "sha256": "252f184d55d85d1cb47af0049ce6f1f32aeb677d98588ad97ba8f6ba78d386f3"
+          "size": 2198,
+          "sha256": "9a38bd3cf0bd775822b30105dc16d95b78c30a1f1d0776e9618c126c7a1f6c6d"
         },
         {
           "path": "manifest.json",
-          "size": 719,
-          "sha256": "ff8f79d0f557d39d3b2418f10e051c03be9cb5989ced7e097a159c77850deb30"
+          "size": 734,
+          "sha256": "d11f5dc00d9b014dbdc7a955090f8b8350860e67788a230b4ae5187d16983494"
         },
         {
           "path": "style.css",
-          "size": 2919,
-          "sha256": "3cb456a62d3dfac351c8b5c557d59e9327fdfcd66e20b43332f7bfaa60f78a0c"
+          "size": 4432,
+          "sha256": "6c384f454b501d840d2e7125dbde9e033f07cdfca6282d51806162dced3377d8"
         },
         {
           "path": "verify.cjs",

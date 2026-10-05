@@ -36,6 +36,8 @@
       if(message.type === 'dashdock:context')dash.preview = message.preview === true;
       if (message.config && typeof message.config === 'object') dash.config = message.config;
       dispatchEvent(new Event('dashdock:context'));
+    } else if (message.type === 'dashdock:monitoring') {
+      dispatchEvent(new Event('dashdock:monitoring'));
     } else if (message.type === 'dashdock:theme') {
       const root = document.documentElement;
       if (['fr', 'en'].includes(message.lang)) { dash.lang = message.lang; root.lang = message.lang; }
