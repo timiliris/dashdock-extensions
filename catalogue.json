@@ -5,7 +5,7 @@
       "manifest": {
         "id": "assistant",
         "name": "Assistant IA",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "description": "Discutez avec OpenRouter, Ollama ou LM Studio et contrôlez les notes et chronomètres de votre dashboard.",
         "entry": "index.html",
         "api_version": 1,
@@ -20,7 +20,8 @@
         ],
         "permissions": [
           "ai",
-          "dashboard"
+          "dashboard",
+          "services"
         ],
         "translations": {
           "en": {
@@ -36,8 +37,8 @@
       "files": [
         {
           "path": "app.js",
-          "size": 12903,
-          "sha256": "474ff5112acafb46f12bc6a947c8d02e3f9015eae5b86eab13dcce38029f7650"
+          "size": 13547,
+          "sha256": "97e15f73876de2e0a32d412aaca558c9beb9ab61f164f0e320333e2389bd8790"
         },
         {
           "path": "index.html",
@@ -46,8 +47,8 @@
         },
         {
           "path": "manifest.json",
-          "size": 791,
-          "sha256": "b840ad2d229ff266787b483a58874f6d5da743dd3d056e743adf526fc58c3f52"
+          "size": 807,
+          "sha256": "85b8eaba912269cb9c437e4705a89de02fa0647636e364a861d47ef5b5cf08a5"
         },
         {
           "path": "style.css",
@@ -414,7 +415,7 @@
       "manifest": {
         "id": "server-status",
         "name": "Statut des serveurs",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "description": "Disponibilité HTTP et latence réelle de vos services configurés.",
         "entry": "index.html",
         "api_version": 1,
@@ -428,7 +429,8 @@
           "monitoring"
         ],
         "permissions": [
-          "status"
+          "status",
+          "services"
         ],
         "translations": {
           "fr": {
@@ -444,8 +446,8 @@
       "files": [
         {
           "path": "app.js",
-          "size": 2916,
-          "sha256": "478cb83757f7def456a60970a8140fc4aa9668e93db54a117ae5a6e6be0a43a3"
+          "size": 4924,
+          "sha256": "edb671b7dcf3fc5b538e05a16092a8ada502fd4f8852649d543331897a50ace2"
         },
         {
           "path": "bridge.js",
@@ -454,18 +456,18 @@
         },
         {
           "path": "index.html",
-          "size": 1003,
-          "sha256": "6c9bf3b6b9ebc4b9b3d8edfefdd17261cdb8a8e7cbb6b44c76dda7748ee3b3d5"
+          "size": 1414,
+          "sha256": "252f184d55d85d1cb47af0049ce6f1f32aeb677d98588ad97ba8f6ba78d386f3"
         },
         {
           "path": "manifest.json",
-          "size": 565,
-          "sha256": "3ef3edf13d3f3aa284d395b4c96ffee40627c88694e4400767a9a4dab20ed722"
+          "size": 719,
+          "sha256": "1cb340d90e10244b2972f096c76ab27a43677dea7d435e78d750e251a0edbda1"
         },
         {
           "path": "style.css",
-          "size": 2591,
-          "sha256": "57090628185d835d7dbf498fb57c5622d2e31181f489cf8037591ac8d1258742"
+          "size": 2919,
+          "sha256": "3cb456a62d3dfac351c8b5c557d59e9327fdfcd66e20b43332f7bfaa60f78a0c"
         },
         {
           "path": "verify.cjs",

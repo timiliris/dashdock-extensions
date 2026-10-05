@@ -23,7 +23,7 @@ for(const id of (await readdir(path.join(root,'extensions'))).sort()) {
   const manifest=JSON.parse(await readFile(path.join(directory,'manifest.json'),'utf8'));
   const assets=await files(directory);
   if(manifest.id!==id||manifest.api_version!==1||!safe(manifest.entry)||!manifest.version||!manifest.name||!assets.some(file=>file.path===manifest.entry))throw Error('Invalid manifest: '+id);
-  if((manifest.permissions||[]).some(p=>!['ai','weather','news','status','links','dashboard'].includes(p)))throw Error('Unknown permission: '+id);
+  if((manifest.permissions||[]).some(p=>!['ai','weather','news','status','links','dashboard','services'].includes(p)))throw Error('Unknown permission: '+id);
   if(assets.length>64||assets.reduce((n,f)=>n+f.size,0)>2*1024*1024)throw Error('Package too large: '+id);
   extensions.push({manifest,files:assets});
 }
