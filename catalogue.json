@@ -925,6 +925,70 @@
     },
     {
       "manifest": {
+        "id": "tailscale",
+        "name": "Tailscale",
+        "description": "Appareils du tailnet, adresses, autorisations et dernière activité.",
+        "version": "1.0.0",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "monitoring",
+        "icon": "⠿",
+        "permissions": [
+          "tailscale"
+        ],
+        "tags": [
+          "tailscale",
+          "vpn",
+          "network",
+          "réseau",
+          "homelab"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Tailscale",
+            "description": "Appareils du tailnet, adresses, autorisations et dernière activité."
+          },
+          "en": {
+            "name": "Tailscale",
+            "description": "Tailnet devices, addresses, approval status and last activity."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 1267,
+          "sha256": "3f4cc9643e1ceda7db63305019cb72007b645890117b4c3b0d1cf3cafca1d4b8"
+        },
+        {
+          "path": "app.js",
+          "size": 7579,
+          "sha256": "827a5136adeae03ce96b6609a47e6fe9d042cc799480bfce6db7029cc57721eb"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3354,
+          "sha256": "ee85d5971e225f144682b798cc80e1e48b622bf7c937ccf38d58ce315fd2ab29"
+        },
+        {
+          "path": "index.html",
+          "size": 986,
+          "sha256": "a2b851cd997bd43cf73466bec392090dc47823d5a93836e828ae99ee88198a00"
+        },
+        {
+          "path": "manifest.json",
+          "size": 673,
+          "sha256": "6f72abd1f34ee300793c10b149fcc757e13a2d610db8ac017efa627cacca2c0f"
+        },
+        {
+          "path": "style.css",
+          "size": 2887,
+          "sha256": "1615700d95aeafaade3c6b23d4b5322f361456ca6ab00e1e11e204e89a37f242"
+        }
+      ]
+    },
+    {
+      "manifest": {
         "id": "unit-converter",
         "name": "Convertisseur",
         "version": "1.0.0",

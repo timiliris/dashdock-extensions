@@ -197,3 +197,5 @@ Only installed widget views with the `dashboard` permission may list or execute 
 ## Read-only service integrations
 
 `cloudflare` permission exposes `cloudflare.status`, `cloudflare.zones`, `cloudflare.zone({zone})`. `crowdsec` exposes `crowdsec.status`, `crowdsec.decisions`. Credentials and the CrowdSec URL are configured only by the DashDock administrator in server environment variables. Browser extensions never receive keys or supply endpoint URLs. Requests are blocked in store previews: render explicitly labeled fictional demo data instead. Server results include `checked_at` (Unix seconds); the cache is 60 seconds. Cloudflare DNS contents are omitted. CrowdSec counts refer only to active engine/manual decisions, not community lists or historical attacks.
+
+`tailscale` permission exposes `tailscale.status` and `tailscale.devices`. Server-only OAuth with `devices:core:read` renews tokens automatically, or use an API access token. Read-only inventory includes name, DNS name, addresses, OS, approval, last seen and key expiry. Preview requests are blocked. Last seen is not a live online status.

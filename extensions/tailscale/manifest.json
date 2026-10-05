@@ -1,0 +1,30 @@
+{
+  "id": "tailscale",
+  "name": "Tailscale",
+  "description": "Appareils du tailnet, adresses, autorisations et dernière activité.",
+  "version": "1.0.0",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "monitoring",
+  "icon": "⠿",
+  "permissions": [
+    "tailscale"
+  ],
+  "tags": [
+    "tailscale",
+    "vpn",
+    "network",
+    "réseau",
+    "homelab"
+  ],
+  "translations": {
+    "fr": {
+      "name": "Tailscale",
+      "description": "Appareils du tailnet, adresses, autorisations et dernière activité."
+    },
+    "en": {
+      "name": "Tailscale",
+      "description": "Tailnet devices, addresses, approval status and last activity."
+    }
+  }
+}
