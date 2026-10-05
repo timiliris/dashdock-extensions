@@ -1,0 +1,25 @@
+{
+  "id": "calculator",
+  "name": "Calculatrice",
+  "version": "1.0.0",
+  "description": "Calculs rapides, parenthèses et raccourcis clavier, sans exécution de code.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "tools",
+  "icon": "calculator",
+  "tags": [
+    "calcul",
+    "mathématiques",
+    "clavier"
+  ],
+  "translations": {
+    "fr": {
+      "name": "Calculatrice",
+      "description": "Calculs rapides, parenthèses et raccourcis clavier, sans exécution de code."
+    },
+    "en": {
+      "name": "Calculator",
+      "description": "Quick calculations, brackets and keyboard shortcuts without code execution."
+    }
+  }
+}

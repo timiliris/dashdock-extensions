@@ -1,0 +1,18 @@
+{
+  "id": "hello",
+  "name": "Premier widget",
+  "version": "1.0.0",
+  "description": "Une extension d’exemple, prête à modifier. Aucun outil de compilation nécessaire.",
+  "entry": "index.html",
+  "api_version": 1,
+  "translations": {
+    "fr": {
+      "name": "Premier widget",
+      "description": "Une extension d’exemple, prête à modifier. Aucun outil de compilation nécessaire."
+    },
+    "en": {
+      "name": "First widget",
+      "description": "An example extension ready to customize. No build tools required."
+    }
+  }
+}

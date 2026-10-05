@@ -1,0 +1,535 @@
+{
+  "api_version": 1,
+  "extensions": [
+    {
+      "manifest": {
+        "id": "assistant",
+        "name": "Assistant IA",
+        "version": "1.0.0",
+        "description": "Discutez avec OpenRouter, Ollama ou LM Studio. Modèles locaux ou cloud, clés conservées sur le serveur.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "ai",
+        "icon": "sparkles",
+        "tags": [
+          "IA",
+          "AI",
+          "Ollama",
+          "OpenRouter",
+          "LM Studio"
+        ],
+        "permissions": [
+          "ai"
+        ],
+        "translations": {
+          "en": {
+            "name": "AI Assistant",
+            "description": "Chat with OpenRouter, Ollama or LM Studio. Local or cloud models, keys kept on the server."
+          },
+          "fr": {
+            "name": "Assistant IA",
+            "description": "Discutez avec OpenRouter, Ollama ou LM Studio. Modèles locaux ou cloud, clés conservées sur le serveur."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "app.js",
+          "size": 10342,
+          "sha256": "3520bc913a4c01f4dfcb82d5febae5f0e0bfbb516c5a25065cd4f31b8d221a94"
+        },
+        {
+          "path": "index.html",
+          "size": 1590,
+          "sha256": "a1b2e227bfdbfa4b7aca18c8a0dada60d957f2160c75644b79fe42803ad34b67"
+        },
+        {
+          "path": "manifest.json",
+          "size": 770,
+          "sha256": "3e8d844bd93b2521a3191153b8577c87ee4ddbefff9797df47926f1dda36160b"
+        },
+        {
+          "path": "style.css",
+          "size": 5137,
+          "sha256": "daf03b47b813c8757c55067821bd3bdb17f157c3f2d0cc0f4c00a52f518833ac"
+        },
+        {
+          "path": "theme.js",
+          "size": 1437,
+          "sha256": "51def1afe4e5cdea129fb6678b979fd29a50df628368598eef33d6fe1bb229de"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "calculator",
+        "name": "Calculatrice",
+        "version": "1.0.0",
+        "description": "Calculs rapides, parenthèses et raccourcis clavier, sans exécution de code.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "tools",
+        "icon": "calculator",
+        "tags": [
+          "calcul",
+          "mathématiques",
+          "clavier"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Calculatrice",
+            "description": "Calculs rapides, parenthèses et raccourcis clavier, sans exécution de code."
+          },
+          "en": {
+            "name": "Calculator",
+            "description": "Quick calculations, brackets and keyboard shortcuts without code execution."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "app.js",
+          "size": 2801,
+          "sha256": "4914498b6faae183a35007aa7ac1c780516885d96e46cdb8080ca1ea19b67d20"
+        },
+        {
+          "path": "i18n.js",
+          "size": 2929,
+          "sha256": "484d818c048edc49db1747c225cb6f2e693bdc621d8dd79beb8d2a18ee66c49a"
+        },
+        {
+          "path": "index.html",
+          "size": 2106,
+          "sha256": "bd4b37d1d057b56b409e5dfd5b9d064d7ca42b775b0c4b5ad23570b68b225f1e"
+        },
+        {
+          "path": "manifest.json",
+          "size": 650,
+          "sha256": "94a103845357491c844a0284f6a1ff533ea5f255f72fa7043c1620eb898525f2"
+        },
+        {
+          "path": "style.css",
+          "size": 1152,
+          "sha256": "a641f2417605acb545eb2997020bc158e9ed86fc724983427ecfed87f4e56ce3"
+        },
+        {
+          "path": "theme.js",
+          "size": 1561,
+          "sha256": "c84fa847d5d039b65a83fb31729e2c934faddae2742f4d1e45acacd407ccb4d2"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "checklist",
+        "name": "Checklist",
+        "version": "1.1.0",
+        "description": "Une liste de tâches enregistrée pour chaque widget.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "productivity",
+        "icon": "checklist",
+        "tags": [
+          "tâches",
+          "liste",
+          "persistant",
+          "tasks"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Checklist",
+            "description": "Une liste de tâches enregistrée pour chaque widget."
+          },
+          "en": {
+            "name": "Checklist",
+            "description": "A task list saved separately for each widget."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "app.js",
+          "size": 3871,
+          "sha256": "587b9e8f19f61001467288045a18748d898e841191e5003474be2054a112b7fe"
+        },
+        {
+          "path": "i18n.js",
+          "size": 2929,
+          "sha256": "484d818c048edc49db1747c225cb6f2e693bdc621d8dd79beb8d2a18ee66c49a"
+        },
+        {
+          "path": "index.html",
+          "size": 1615,
+          "sha256": "578de2bca8304a6a0eed77573e3b0cde884aa8a587d80a0f15e6bda864578b15"
+        },
+        {
+          "path": "manifest.json",
+          "size": 578,
+          "sha256": "57ed7ab18572b92053f37db8b83f3b87c4936ae6c6fd636c6b65ff4c1023c85e"
+        },
+        {
+          "path": "store.js",
+          "size": 1199,
+          "sha256": "186a175d1c852798ef1ec3e34aa8c74c1f7061870516b4a1a4dd39267053b4d9"
+        },
+        {
+          "path": "style.css",
+          "size": 1152,
+          "sha256": "a641f2417605acb545eb2997020bc158e9ed86fc724983427ecfed87f4e56ce3"
+        },
+        {
+          "path": "theme.js",
+          "size": 1561,
+          "sha256": "c84fa847d5d039b65a83fb31729e2c934faddae2742f4d1e45acacd407ccb4d2"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "date",
+        "name": "Calendrier",
+        "version": "1.0.0",
+        "description": "Calendrier mensuel avec navigation et retour à aujourd’hui, dans votre heure locale.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "tools",
+        "icon": "calendar",
+        "tags": [
+          "date",
+          "mois",
+          "calendrier"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Calendrier",
+            "description": "Calendrier mensuel avec navigation et retour à aujourd’hui, dans votre heure locale."
+          },
+          "en": {
+            "name": "Calendar",
+            "description": "Monthly calendar with navigation and a return to today in your local time."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "app.js",
+          "size": 1897,
+          "sha256": "d09fddd4478e8333f84de1a882a9b9befa80644fedeebecceb62c67f07d7063e"
+        },
+        {
+          "path": "i18n.js",
+          "size": 2929,
+          "sha256": "484d818c048edc49db1747c225cb6f2e693bdc621d8dd79beb8d2a18ee66c49a"
+        },
+        {
+          "path": "index.html",
+          "size": 1561,
+          "sha256": "2f3a4740a3503da79ee14a4c563975b82d86cdcb061cce0add4a18786dd13dff"
+        },
+        {
+          "path": "manifest.json",
+          "size": 646,
+          "sha256": "9897adccf30022717e71eacc02e161943bff0991e83b228ea1b25b1648eb78c3"
+        },
+        {
+          "path": "style.css",
+          "size": 1152,
+          "sha256": "a641f2417605acb545eb2997020bc158e9ed86fc724983427ecfed87f4e56ce3"
+        },
+        {
+          "path": "theme.js",
+          "size": 1561,
+          "sha256": "c84fa847d5d039b65a83fb31729e2c934faddae2742f4d1e45acacd407ccb4d2"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "focus",
+        "name": "Focus",
+        "version": "1.1.0",
+        "description": "Un minuteur de concentration avec durées focus et pause personnalisables.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "productivity",
+        "icon": "timer",
+        "tags": [
+          "pomodoro",
+          "minuteur",
+          "concentration"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Focus",
+            "description": "Un minuteur de concentration avec durées focus et pause personnalisables."
+          },
+          "en": {
+            "name": "Focus",
+            "description": "A focus timer with customizable focus and break durations."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "app.js",
+          "size": 4988,
+          "sha256": "3147b08cb63ec4c31fb5e3afd6748456aec0dc020670c25afb0ab2a4db02c8f0"
+        },
+        {
+          "path": "i18n.js",
+          "size": 2929,
+          "sha256": "484d818c048edc49db1747c225cb6f2e693bdc621d8dd79beb8d2a18ee66c49a"
+        },
+        {
+          "path": "index.html",
+          "size": 2069,
+          "sha256": "eb8eaf68505967e3bf447fa06cbd5006231d519e62c1f5bc238b3bc4dd369a91"
+        },
+        {
+          "path": "manifest.json",
+          "size": 607,
+          "sha256": "3ed73da9eee620e1d0a651ad67583b28220511227a25bd19dae3fd25e3ab4b79"
+        },
+        {
+          "path": "store.js",
+          "size": 1199,
+          "sha256": "186a175d1c852798ef1ec3e34aa8c74c1f7061870516b4a1a4dd39267053b4d9"
+        },
+        {
+          "path": "style.css",
+          "size": 1152,
+          "sha256": "a641f2417605acb545eb2997020bc158e9ed86fc724983427ecfed87f4e56ce3"
+        },
+        {
+          "path": "theme.js",
+          "size": 1561,
+          "sha256": "c84fa847d5d039b65a83fb31729e2c934faddae2742f4d1e45acacd407ccb4d2"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "hello",
+        "name": "Premier widget",
+        "version": "1.0.0",
+        "description": "Une extension d’exemple, prête à modifier. Aucun outil de compilation nécessaire.",
+        "entry": "index.html",
+        "api_version": 1,
+        "translations": {
+          "fr": {
+            "name": "Premier widget",
+            "description": "Une extension d’exemple, prête à modifier. Aucun outil de compilation nécessaire."
+          },
+          "en": {
+            "name": "First widget",
+            "description": "An example extension ready to customize. No build tools required."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "i18n.js",
+          "size": 2929,
+          "sha256": "484d818c048edc49db1747c225cb6f2e693bdc621d8dd79beb8d2a18ee66c49a"
+        },
+        {
+          "path": "index.html",
+          "size": 1387,
+          "sha256": "457285f22266eab25c1c16837f36b761dcc223073a9fb27c3982bf40a06db9d9"
+        },
+        {
+          "path": "manifest.json",
+          "size": 545,
+          "sha256": "c5f639020fbc2c4ba11ccf3024eae92a028838c3d65f3043ac7ddb832fc730d4"
+        },
+        {
+          "path": "theme.js",
+          "size": 1561,
+          "sha256": "c84fa847d5d039b65a83fb31729e2c934faddae2742f4d1e45acacd407ccb4d2"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "news",
+        "name": "Actualités RSS",
+        "version": "1.0.0",
+        "description": "Titres et liens des flux RSS et Atom configurés par votre administrateur.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "information",
+        "icon": "rss",
+        "tags": [
+          "news",
+          "rss",
+          "atom",
+          "actualites",
+          "feed"
+        ],
+        "permissions": [
+          "news",
+          "links"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Actualités RSS",
+            "description": "Titres et liens des flux RSS et Atom configurés par votre administrateur."
+          },
+          "en": {
+            "name": "News feeds",
+            "description": "Headlines and links from RSS and Atom feeds configured by your administrator."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "app.js",
+          "size": 3437,
+          "sha256": "eb4608ddf27274ec64d2571d40ea639da6a2f55541f7a9603d323a110a88a0fc"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3028,
+          "sha256": "e89ef1b40a17c5c1dfb8aae2de79e9442c2a1e3298532621b4a91e6538d39982"
+        },
+        {
+          "path": "index.html",
+          "size": 853,
+          "sha256": "816c96c0aaa0f74ce766533210eab34c7162d34eb2fa12425cf0d926596f8049"
+        },
+        {
+          "path": "manifest.json",
+          "size": 706,
+          "sha256": "b5811d07e2cf177d610c2baf63401de109fc84ec05a870a4db964a2559e5b6e8"
+        },
+        {
+          "path": "style.css",
+          "size": 2591,
+          "sha256": "57090628185d835d7dbf498fb57c5622d2e31181f489cf8037591ac8d1258742"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "server-status",
+        "name": "Statut des serveurs",
+        "version": "1.0.0",
+        "description": "Disponibilité HTTP et latence réelle de vos services configurés.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "monitoring",
+        "icon": "activity",
+        "tags": [
+          "server",
+          "status",
+          "uptime",
+          "serveur",
+          "monitoring"
+        ],
+        "permissions": [
+          "status"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Statut des serveurs",
+            "description": "Disponibilité HTTP et latence réelle de vos services configurés."
+          },
+          "en": {
+            "name": "Server status",
+            "description": "Live HTTP availability and latency for your configured services."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "app.js",
+          "size": 2916,
+          "sha256": "478cb83757f7def456a60970a8140fc4aa9668e93db54a117ae5a6e6be0a43a3"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3028,
+          "sha256": "e89ef1b40a17c5c1dfb8aae2de79e9442c2a1e3298532621b4a91e6538d39982"
+        },
+        {
+          "path": "index.html",
+          "size": 1003,
+          "sha256": "6c9bf3b6b9ebc4b9b3d8edfefdd17261cdb8a8e7cbb6b44c76dda7748ee3b3d5"
+        },
+        {
+          "path": "manifest.json",
+          "size": 565,
+          "sha256": "3ef3edf13d3f3aa284d395b4c96ffee40627c88694e4400767a9a4dab20ed722"
+        },
+        {
+          "path": "style.css",
+          "size": 2591,
+          "sha256": "57090628185d835d7dbf498fb57c5622d2e31181f489cf8037591ac8d1258742"
+        },
+        {
+          "path": "verify.cjs",
+          "size": 5156,
+          "sha256": "d6c212d3fa36c944ad89ca1231bcb9def5d451f7021586a1e44c1119ffcd1534"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "id": "weather",
+        "name": "Météo",
+        "version": "1.0.0",
+        "description": "Conditions météo réelles par ville avec Open-Meteo, sans clé API.",
+        "entry": "index.html",
+        "api_version": 1,
+        "category": "information",
+        "icon": "sun",
+        "tags": [
+          "weather",
+          "meteo",
+          "temperature",
+          "city"
+        ],
+        "permissions": [
+          "weather"
+        ],
+        "translations": {
+          "fr": {
+            "name": "Météo",
+            "description": "Conditions météo réelles par ville avec Open-Meteo, sans clé API."
+          },
+          "en": {
+            "name": "Weather",
+            "description": "Current city weather from Open-Meteo, with no API key."
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "app.js",
+          "size": 4987,
+          "sha256": "d4c7bbc7cb5e53d297f4f23e75eea97d294f2340c543a1710091b4cb51e5f331"
+        },
+        {
+          "path": "bridge.js",
+          "size": 3028,
+          "sha256": "e89ef1b40a17c5c1dfb8aae2de79e9442c2a1e3298532621b4a91e6538d39982"
+        },
+        {
+          "path": "index.html",
+          "size": 1036,
+          "sha256": "285283bd8d2bdccf0403e4ea25a18d3507c51564fb216bcd5b7bc36396a421bc"
+        },
+        {
+          "path": "manifest.json",
+          "size": 509,
+          "sha256": "976415cabc6a2f458d53f2c56fe6038992093e2834b6abb87dfcfa183f0b4ecf"
+        },
+        {
+          "path": "style.css",
+          "size": 2591,
+          "sha256": "57090628185d835d7dbf498fb57c5622d2e31181f489cf8037591ac8d1258742"
+        }
+      ]
+    }
+  ]
+}

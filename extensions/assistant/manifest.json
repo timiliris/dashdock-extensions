@@ -1,0 +1,30 @@
+{
+  "id": "assistant",
+  "name": "Assistant IA",
+  "version": "1.0.0",
+  "description": "Discutez avec OpenRouter, Ollama ou LM Studio. Modèles locaux ou cloud, clés conservées sur le serveur.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "ai",
+  "icon": "sparkles",
+  "tags": [
+    "IA",
+    "AI",
+    "Ollama",
+    "OpenRouter",
+    "LM Studio"
+  ],
+  "permissions": [
+    "ai"
+  ],
+  "translations": {
+    "en": {
+      "name": "AI Assistant",
+      "description": "Chat with OpenRouter, Ollama or LM Studio. Local or cloud models, keys kept on the server."
+    },
+    "fr": {
+      "name": "Assistant IA",
+      "description": "Discutez avec OpenRouter, Ollama ou LM Studio. Modèles locaux ou cloud, clés conservées sur le serveur."
+    }
+  }
+}

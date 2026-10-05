@@ -1,0 +1,26 @@
+{
+  "id": "checklist",
+  "name": "Checklist",
+  "version": "1.1.0",
+  "description": "Une liste de tâches enregistrée pour chaque widget.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "productivity",
+  "icon": "checklist",
+  "tags": [
+    "tâches",
+    "liste",
+    "persistant",
+    "tasks"
+  ],
+  "translations": {
+    "fr": {
+      "name": "Checklist",
+      "description": "Une liste de tâches enregistrée pour chaque widget."
+    },
+    "en": {
+      "name": "Checklist",
+      "description": "A task list saved separately for each widget."
+    }
+  }
+}

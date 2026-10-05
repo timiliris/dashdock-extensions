@@ -1,0 +1,31 @@
+{
+  "id": "news",
+  "name": "Actualités RSS",
+  "version": "1.0.0",
+  "description": "Titres et liens des flux RSS et Atom configurés par votre administrateur.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "information",
+  "icon": "rss",
+  "tags": [
+    "news",
+    "rss",
+    "atom",
+    "actualites",
+    "feed"
+  ],
+  "permissions": [
+    "news",
+    "links"
+  ],
+  "translations": {
+    "fr": {
+      "name": "Actualités RSS",
+      "description": "Titres et liens des flux RSS et Atom configurés par votre administrateur."
+    },
+    "en": {
+      "name": "News feeds",
+      "description": "Headlines and links from RSS and Atom feeds configured by your administrator."
+    }
+  }
+}

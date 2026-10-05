@@ -1,0 +1,25 @@
+{
+  "id": "date",
+  "name": "Calendrier",
+  "version": "1.0.0",
+  "description": "Calendrier mensuel avec navigation et retour à aujourd’hui, dans votre heure locale.",
+  "entry": "index.html",
+  "api_version": 1,
+  "category": "tools",
+  "icon": "calendar",
+  "tags": [
+    "date",
+    "mois",
+    "calendrier"
+  ],
+  "translations": {
+    "fr": {
+      "name": "Calendrier",
+      "description": "Calendrier mensuel avec navigation et retour à aujourd’hui, dans votre heure locale."
+    },
+    "en": {
+      "name": "Calendar",
+      "description": "Monthly calendar with navigation and a return to today in your local time."
+    }
+  }
+}
